@@ -1,0 +1,339 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+@font-face {
+    font-family: "montserratbold";
+    src: url("/polices/montserrat-bold-webfont.woff2") format("woff2"),
+         url("/polices/montserrat-bold-webfont.woff") format("woff");
+    font-weight: "normal";
+    font-style: "normal";
+}
+
+@font-face {
+    font-family: "caveatregular";
+    src: url("/polices/caveat-regular-webfont.woff2") format("woff2"),
+         url("/polices/caveat-regular-webfont.woff") format("woff");
+    font-weight: "normal";
+    font-style: "normal";
+}
+
+@font-face {
+    font-family: "dancing_scriptregular";
+    src: url("/polices/dancingscript-variablefont_wght-webfont.woff2") format("woff2"),
+         url("/polices/dancingscript-variablefont_wght-webfont.woff") format("woff");
+    font-weight: "normal";
+    font-style: "normal";
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    @include header;
+}
+
+article{
+    width: 65%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: $color-back-menu3;
+    margin: auto;
+
+}
+
+#menu-header {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 7%;
+
+    h2 {
+        font-size: 40px;
+        font-family: "dancing_scriptregular";
+        color: $color1-menu3;
+    
+    }
+}
+
+.menu_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        @include title-h2-animation;
+        font-family: "caveatregular";
+        font-size: 33px;
+    }
+
+    :hover{
+        background-size: 100% 100%;
+    }
+}
+
+.menu_elmnt{
+    margin: 0;
+    padding: 15px 0px 71px 0px;
+
+    li{
+        display: flex;
+        justify-content: space-between;
+        width: 56%;
+        font-size: 25px;
+        padding-left: 23%;
+    }
+
+    p{
+        margin: 0px;
+        line-height: 50px;
+        font-family: "caveatregular";
+    }
+}
+
+#title-second h2 {
+    padding: 0px 45px;
+}
+
+#title-third h2 {
+    padding: 0px 25px;
+}
+
+footer {
+    @include footer;
+}
+
+footer button {
+    @include footer-button;
+}
+
+footer button:hover{
+    animation: shake 0.8s infinite;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    
+    30%, 50%, 70% {
+        transform: translate3d(-2px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(2px, 0, 0);
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px)
+{
+    h2{
+        margin-bottom: 7%;
+    }
+    
+    article{
+        width: 90%;
+    }
+
+    #menu-header{
+        padding-top: 2px;
+
+        h2{
+            font-size: 35px;
+        }
+    }
+
+    .menu_title{
+        h2{
+            font-size: 25px;
+        }
+    }
+
+    .menu_elmnt{
+        padding: 17px;
+
+        li{
+            display: initial;
+            font-size: 19px;
+        }
+
+        p{
+            line-height: 25px;
+            text-align: center;
+            width: 97%;
+        }
+    }
+
+    #menu1-footer {
+        i{
+            font-size: 50px;
+        }
+
+        h2{
+            font-size: 30px;
+        }
+    }
+
+    footer{
+        margin-top: 7%;
+
+        button{
+            font-size: 15px;
+        }
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px)
+{
+    h2{
+        margin-bottom: 4%;
+    }
+
+    article{
+        width: 90%;
+    }
+
+    .menu_title{
+        h2{
+            font-size: 24px;
+        }
+    }
+
+    .menu_elmnt{
+        li {
+            font-size: 20px;
+            width: 80%;
+            padding-left: 10%;
+        }
+    }
+
+    footer{
+        button{
+            font-size: 18px;
+        }
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 2559px)
+{
+    article{
+        width: 80%;
+    }
+
+    .menu_title{
+        h2{
+            font-size: 29px;
+        }
+    }
+
+    .menu_elmnt{
+        li{
+            width: 78%;
+            font-size: 21px;
+            padding-left: 11%;
+        }
+    }
+
+    footer button{
+        font-size: 17px;
+    }
+}
+
+@media all and (min-width: 1440px) and (max-width: 2559px)
+{
+    #menu-header{
+        i{
+            font-size: 70px;
+        }
+
+        h2{
+            font-size: 45px;
+        }
+    }
+
+    .menu_title {
+        h2{
+            font-size: 30px;
+        }
+    }
+
+    .menu_elmnt{
+        li{
+            font-size: 27px;
+        }
+    }
+
+    footer button{
+        font-size: 21px;
+    }
+}
+
+@media all and (min-width: 2560px)
+{
+    header{
+        height: 126px;
+
+        h1{
+            font-size: 80px;
+            padding-top: 0px;
+        }
+    }
+
+    h2{
+        font-size: 50px;
+    }
+
+    article{
+        width: 80%;
+    }
+
+    #menu-header{
+        i{
+            font-size: 100px;
+        }
+
+        h2{
+            font-size: 70px;
+        }
+    }
+
+    .menu_title{
+        h2{
+            font-size: 50px;
+        }
+    }
+
+    .menu_elmnt{
+        li{
+            font-size: 43px;
+        }
+
+        p{
+            line-height: 90px;
+        }
+    }
+
+    #menu1-footer{
+        i{
+            font-size: 100px;
+        }
+
+        h2{
+            font-size: 70px;
+        }
+    }
+
+    footer{
+        height: 100px;
+
+        button{
+            font-size: 35px;
+        }
+    }
+
+}
