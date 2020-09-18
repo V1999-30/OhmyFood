@@ -58,7 +58,10 @@ article{
     padding-top: 40px;
 
     i{
-        color: #f05060;
+        background: rgb(240,80,96);
+        background: linear-gradient(90deg, rgba(240,80,96,1) 50%, rgba(244,136,24,1) 100%); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-size: 60px;
     }
 
@@ -192,7 +195,7 @@ footer button:hover{
         }
 
         p{
-            line-height: 25px;
+            line-height: 20px;
             text-align: center;
             width: 97%;
         }
@@ -245,7 +248,7 @@ footer button:hover{
 @media all and (min-width: 1024px) and (max-width: 2559px)
 {
     article{
-        width: 80%;
+        width: 63%;
     }
 
     .menu_title{
@@ -257,8 +260,12 @@ footer button:hover{
     .menu_elmnt{
         li{
             width: 78%;
-            font-size: 13px;
-            padding-left: 11%;
+            font-size: 12px;
+            padding-left: 12%;
+        }
+
+        p{
+            line-height: 35px;
         }
     }
 
@@ -287,7 +294,13 @@ footer button:hover{
 
     .menu_elmnt{
         li{
-            font-size: 20px;
+            width: 75%;
+            padding-left: 12%;
+            font-size: 14px;
+        }
+
+        p{
+            line-height: 45px;
         }
     }
 

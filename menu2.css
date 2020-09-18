@@ -52,6 +52,10 @@ article {
 #menu-header h2 {
   font-size: 40px;
   font-family: "croissant_oneregular";
+  background: #e38a12;
+  background: linear-gradient(90deg, #e38a12 10%, #651cff 87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu_title {
@@ -68,16 +72,22 @@ article {
   background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
   background-size: 0 100%;
   transition: background-size 0.3s;
-  color: linear-gradient(to right, red, blue);
 }
 .menu_title :hover {
   background-size: 100% 100%;
 }
 
+#title-first h2 {
+  color: #e38a12;
+}
+
+#elmnt-first {
+  color: #e38a12;
+}
+
 .menu_elmnt {
   margin: 0;
   padding: 15px 0px 71px 0px;
-  color: linear-gradient(to right, red, blue);
 }
 .menu_elmnt li {
   display: flex;
@@ -92,11 +102,21 @@ article {
 }
 
 #title-second h2 {
+  color: #9a4a9b;
   padding: 0px 45px;
 }
 
+#elmnt-second {
+  color: #9a4a9b;
+}
+
 #title-third h2 {
+  color: #651cff;
   padding: 0px 25px;
+}
+
+#elmnt-third {
+  color: #651cff;
 }
 
 footer {
@@ -199,7 +219,7 @@ footer button:hover {
 }
 @media all and (min-width: 1024px) and (max-width: 2559px) {
   article {
-    width: 80%;
+    width: 58%;
   }
 
   .menu_title h2 {
@@ -207,9 +227,9 @@ footer button:hover {
   }
 
   .menu_elmnt li {
-    width: 78%;
-    font-size: 19px;
-    padding-left: 11%;
+    width: 83%;
+    font-size: 17px;
+    padding-left: 9%;
   }
 
   footer button {
@@ -230,6 +250,8 @@ footer button:hover {
 
   .menu_elmnt li {
     font-size: 20px;
+    width: 70%;
+    padding-left: 15%;
   }
 
   footer button {

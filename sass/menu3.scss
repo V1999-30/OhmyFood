@@ -50,6 +50,10 @@ article{
     text-align: center;
     padding-top: 20px;
     margin-top: 7%;
+    background: rgb(0,21,133);
+    background: linear-gradient(90deg, rgba(0,21,133,1) 0%, rgba(19,228,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     h2 {
         font-size: 40px;
@@ -222,7 +226,7 @@ footer button:hover{
 @media all and (min-width: 1024px) and (max-width: 2559px)
 {
     article{
-        width: 80%;
+        width: 58%;
     }
 
     .menu_title{
@@ -233,9 +237,9 @@ footer button:hover{
 
     .menu_elmnt{
         li{
-            width: 78%;
-            font-size: 21px;
-            padding-left: 11%;
+            width: 83%;
+            font-size: 17px;
+            padding-left: 9%;
         }
     }
 
@@ -264,7 +268,9 @@ footer button:hover{
 
     .menu_elmnt{
         li{
-            font-size: 27px;
+            font-size: 24px;
+            width: 70%;
+            padding-left: 15%;
         }
     }
 

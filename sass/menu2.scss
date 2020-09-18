@@ -47,6 +47,10 @@ article{
     h2 {
         font-size: 40px;
         font-family: "croissant_oneregular";
+        background: rgb(227,138,18);
+        background: linear-gradient(90deg, rgba(227,138,18,1) 10%, rgba(101,28,255,1) 87%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 
@@ -57,7 +61,6 @@ article{
 
     h2{
         @include title-h2-animation;
-        color: linear-gradient( to right, red, blue);
     }
 
     :hover{
@@ -65,10 +68,17 @@ article{
     }
 }
 
+#title-first h2{
+    color: $color-menu2;
+}
+
+#elmnt-first{
+    color: $color-menu2;
+}
+
 .menu_elmnt{
     margin: 0;
     padding: 15px 0px 71px 0px;
-    color: linear-gradient( to right, red, blue);
 
     li{
         display: flex;
@@ -85,11 +95,22 @@ article{
 }
 
 #title-second h2 {
+    color: #9a4a9b;
     padding: 0px 45px;
+
+}
+
+#elmnt-second{
+    color: #9a4a9b;
 }
 
 #title-third h2 {
+    color: $color2-menu2;
     padding: 0px 25px;
+}
+
+#elmnt-third{
+    color: $color2-menu2;
 }
 
 footer {
@@ -202,7 +223,7 @@ footer button:hover{
 @media all and (min-width: 1024px) and (max-width: 2559px)
 {
     article{
-        width: 80%;
+        width: 58%;
     }
 
     .menu_title{
@@ -213,9 +234,9 @@ footer button:hover{
 
     .menu_elmnt{
         li{
-            width: 78%;
-            font-size: 19px;
-            padding-left: 11%;
+            width: 83%;
+            font-size: 17px;
+            padding-left: 9%;
         }
     }
 
@@ -245,6 +266,8 @@ footer button:hover{
     .menu_elmnt{
         li{
             font-size: 20px;
+            width: 70%;
+            padding-left: 15%;
         }
     }
 

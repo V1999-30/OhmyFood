@@ -159,8 +159,8 @@ header{
         line-height: 0;
         background: rgb(253,29,29);
         background: linear-gradient(90deg, rgba(253,29,29,1) 50%, rgba(246,145,106,1) 100%);
-        -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     h2 {
@@ -202,7 +202,9 @@ header{
 
     h2 {
         background: rgb(0,21,133);
-        background: linear-gradient(90deg, rgba(0,21,133,1) 50%, rgba(19,180,255,1) 90%);
+        background: linear-gradient(90deg, rgba(0,21,133,1) 0%, rgba(19,228,255,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-family: "dancing_scriptregular";
         font-size: $size-h2_menu-1-3-4;
         line-height: 0;
@@ -220,8 +222,10 @@ header{
     background-color: $color-back-menu4;
     a{
         h2{
-            background: rgb(4,107,0);
-            background: linear-gradient(90deg, rgba(4,107,0,1) 50%, rgba(114,191,86,1) 90%);
+            background: rgb(12,82,10);
+            background: linear-gradient(90deg, rgba(12,82,10,1) 0%, rgba(182,255,114,0.8673844537815126) 70%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-family: "kaushan_scriptregular";
             font-size: $size-h2_menu-1-3-4;
             

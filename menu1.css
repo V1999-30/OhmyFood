@@ -61,7 +61,10 @@ article {
   padding-top: 40px;
 }
 #menu-header i {
-  color: #f05060;
+  background: #f05060;
+  background: linear-gradient(90deg, #f05060 50%, #f48818 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 60px;
 }
 #menu-header h2 {
@@ -197,7 +200,7 @@ footer button:hover {
     font-size: 12px;
   }
   .menu_elmnt p {
-    line-height: 25px;
+    line-height: 20px;
     text-align: center;
     width: 97%;
   }
@@ -237,7 +240,7 @@ footer button:hover {
 }
 @media all and (min-width: 1024px) and (max-width: 2559px) {
   article {
-    width: 80%;
+    width: 63%;
   }
 
   .menu_title h2 {
@@ -246,8 +249,11 @@ footer button:hover {
 
   .menu_elmnt li {
     width: 78%;
-    font-size: 13px;
-    padding-left: 11%;
+    font-size: 12px;
+    padding-left: 12%;
+  }
+  .menu_elmnt p {
+    line-height: 35px;
   }
 
   footer button {
@@ -267,7 +273,12 @@ footer button:hover {
   }
 
   .menu_elmnt li {
-    font-size: 20px;
+    width: 75%;
+    padding-left: 12%;
+    font-size: 14px;
+  }
+  .menu_elmnt p {
+    line-height: 45px;
   }
 
   footer button {
