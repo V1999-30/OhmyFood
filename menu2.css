@@ -37,11 +37,12 @@ header a {
   text-decoration: none;
 }
 
-article {
+main {
   width: 65%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   background-color: #fff5fe;
   margin: auto;
+  margin-bottom: 100px;
 }
 
 #menu-header {
@@ -125,9 +126,6 @@ footer {
   background-color: #579C87;
   display: flex;
   justify-content: space-between;
-  left: 0;
-  bottom: 0;
-  margin-top: 5%;
 }
 
 footer button {
@@ -158,10 +156,21 @@ footer button:hover {
   }
 }
 @media all and (min-width: 320px) and (max-width: 767px) {
-  article {
-    width: 90%;
+  header {
+    height: 83px;
+  }
+  header h1 {
+    font-size: 40px;
   }
 
+  main {
+    width: 90%;
+    margin-bottom: 15%;
+  }
+
+  #menu-header {
+    margin-top: 15%;
+  }
   #menu-header h2 {
     font-size: 23px;
   }
@@ -188,11 +197,11 @@ footer button:hover {
     height: 50px;
   }
   footer button {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1023px) {
-  article {
+  main {
     width: 90%;
   }
 
@@ -214,12 +223,12 @@ footer button:hover {
     height: 60px;
   }
   footer button {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 @media all and (min-width: 1024px) and (max-width: 2559px) {
-  article {
-    width: 58%;
+  main {
+    width: 70%;
   }
 
   .menu_title h2 {
@@ -228,7 +237,7 @@ footer button:hover {
 
   .menu_elmnt li {
     width: 83%;
-    font-size: 17px;
+    font-size: 20px;
     padding-left: 9%;
   }
 
@@ -249,7 +258,7 @@ footer button:hover {
   }
 
   .menu_elmnt li {
-    font-size: 20px;
+    font-size: 23px;
     width: 70%;
     padding-left: 15%;
   }
@@ -260,10 +269,10 @@ footer button:hover {
 }
 @media all and (min-width: 2560px) {
   header {
-    height: 126px;
+    height: 150px;
   }
   header h1 {
-    font-size: 80px;
+    font-size: 100px;
     padding-top: 0px;
   }
 
@@ -271,7 +280,7 @@ footer button:hover {
     font-size: 50px;
   }
 
-  article {
+  main {
     width: 80%;
   }
 
@@ -280,7 +289,7 @@ footer button:hover {
   }
 
   .menu_elmnt li {
-    font-size: 36px;
+    font-size: 43px;
     width: 60%;
     padding-left: 21%;
   }
@@ -289,10 +298,12 @@ footer button:hover {
   }
 
   footer {
-    height: 100px;
+    margin-top: 8%;
+    height: 125px;
   }
+
   footer button {
-    font-size: 35px;
+    font-size: 50px;
   }
 }
 

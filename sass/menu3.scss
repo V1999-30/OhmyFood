@@ -38,11 +38,12 @@ header{
     @include header;
 }
 
-article{
+main{
     width: 65%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     background-color: $color-back-menu3;
     margin: auto;
+    margin-bottom: 100px;
 
 }
 
@@ -140,12 +141,13 @@ footer button:hover{
         margin-bottom: 7%;
     }
     
-    article{
+    main{
         width: 90%;
+        margin-bottom: 12%;
     }
 
     #menu-header{
-        padding-top: 2px;
+        margin-top: 12%;
 
         h2{
             font-size: 35px;
@@ -187,7 +189,7 @@ footer button:hover{
         margin-top: 7%;
 
         button{
-            font-size: 15px;
+            font-size: 18px;
         }
     }
 }
@@ -198,8 +200,9 @@ footer button:hover{
         margin-bottom: 4%;
     }
 
-    article{
-        width: 90%;
+    main{
+        width: 78%;
+        margin-bottom: 50px;
     }
 
     .menu_title{
@@ -225,8 +228,8 @@ footer button:hover{
 
 @media all and (min-width: 1024px) and (max-width: 2559px)
 {
-    article{
-        width: 58%;
+    main{
+        width: 70%;
     }
 
     .menu_title{
@@ -238,13 +241,15 @@ footer button:hover{
     .menu_elmnt{
         li{
             width: 83%;
-            font-size: 17px;
+            font-size: 24px;
             padding-left: 9%;
         }
     }
 
-    footer button{
-        font-size: 17px;
+    footer{
+        button{
+            font-size: 21px;
+        }
     }
 }
 
@@ -268,7 +273,7 @@ footer button:hover{
 
     .menu_elmnt{
         li{
-            font-size: 24px;
+            font-size: 28px;
             width: 70%;
             padding-left: 15%;
         }
@@ -294,7 +299,7 @@ footer button:hover{
         font-size: 50px;
     }
 
-    article{
+    main{
         width: 80%;
     }
 
@@ -305,6 +310,7 @@ footer button:hover{
 
         h2{
             font-size: 70px;
+            margin: auto;
         }
     }
 

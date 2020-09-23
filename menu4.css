@@ -42,7 +42,7 @@ header a {
   text-decoration: none;
 }
 
-article {
+main {
   width: 65%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   background-color: #edefef;
@@ -115,9 +115,6 @@ footer {
   background-color: #579C87;
   display: flex;
   justify-content: space-between;
-  left: 0;
-  bottom: 0;
-  margin-top: 5%;
 }
 
 footer button {
@@ -152,10 +149,14 @@ footer button:hover {
     margin-bottom: 7%;
   }
 
-  article {
+  main {
     width: 90%;
+    margin-bottom: 12%;
   }
 
+  #menu-header {
+    margin-top: 12%;
+  }
   #menu-header i {
     font-size: 50px;
   }
@@ -187,9 +188,6 @@ footer button:hover {
     font-size: 30px;
   }
 
-  footer {
-    margin-top: 18%;
-  }
   footer button {
     font-size: 15px;
   }
@@ -199,8 +197,9 @@ footer button:hover {
     margin-bottom: 4%;
   }
 
-  article {
+  main {
     width: 90%;
+    margin-bottom: 50px;
   }
 
   .menu_title h2 {
@@ -218,8 +217,9 @@ footer button:hover {
   }
 }
 @media all and (min-width: 1024px) and (max-width: 2559px) {
-  article {
-    width: 58%;
+  main {
+    width: 75%;
+    margin-bottom: 50px;
   }
 
   .menu_title h2 {
@@ -262,8 +262,9 @@ footer button:hover {
     font-size: 50px;
   }
 
-  article {
+  main {
     width: 80%;
+    margin-bottom: 6%;
   }
 
   #menu-header i {
@@ -271,6 +272,7 @@ footer button:hover {
   }
   #menu-header h2 {
     font-size: 70px;
+    margin: auto;
   }
 
   .menu_title h2 {

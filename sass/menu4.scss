@@ -39,7 +39,7 @@ header{
     @include header;
 }
 
-article{
+main{
     width: 65%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     background-color: $color-back-menu3;
@@ -139,11 +139,13 @@ footer button:hover{
         margin-bottom: 7%;
     }
     
-    article{
+    main{
         width: 90%;
+        margin-bottom: 12%;
     }
 
     #menu-header{
+            margin-top: 12%;
         i{
             font-size: 50px;
         }
@@ -185,8 +187,6 @@ footer button:hover{
     }
 
     footer{
-        margin-top: 18%;
-
         button{
             font-size: 15px;
         }
@@ -199,8 +199,9 @@ footer button:hover{
         margin-bottom: 4%;
     }
 
-    article{
+    main{
         width: 90%;
+        margin-bottom: 50px;
     }
 
     .menu_title{
@@ -226,8 +227,9 @@ footer button:hover{
 
 @media all and (min-width: 1024px) and (max-width: 2559px)
 {
-    article{
-        width: 58%;
+    main{
+        width: 75%;
+        margin-bottom: 50px;
     }
 
     .menu_title{
@@ -283,8 +285,9 @@ footer button:hover{
         font-size: 50px;
     }
 
-    article{
+    main{
         width: 80%;
+        margin-bottom: 6%;
     }
 
     #menu-header{
@@ -294,6 +297,7 @@ footer button:hover{
 
         h2{
             font-size: 70px;
+            margin: auto;
         }
     }
 
