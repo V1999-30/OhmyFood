@@ -82,12 +82,12 @@ main {
 }
 .menu_title h2 {
   position: relative;
-  padding: 0px 50.5px;
+  padding: 5px;
   margin: 0;
   color: inherit;
   text-decoration: none;
-  background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
-  background-size: 0 100%;
+  background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+  background-size: 0% 100%;
   transition: background-size 0.3s;
   font-family: "short_stackregular";
 }
@@ -112,10 +112,71 @@ main {
   font-family: "short_stackregular";
 }
 
+#title-first :before {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 120px 2px 0;
+  height: 4px;
+  content: " ";
+  text-shadow: none;
+  background-color: black;
+  width: 200px;
+}
+#title-first :after {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 0 2px 120px;
+  height: 4px;
+  content: " ";
+  text-shadow: none;
+  background-color: black;
+  width: 200px;
+}
+
+#title-second :before {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 70px 2px 0;
+  height: 4px;
+  content: " ";
+  text-shadow: none;
+  background-color: black;
+  width: 235px;
+}
+#title-second :after {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 0 2px 55px;
+  height: 4px;
+  content: " ";
+  text-shadow: none;
+  background-color: black;
+  width: 235px;
+}
 #title-second h2 {
   padding: 0px 22px;
 }
 
+#title-third :before {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 20px 2px 0;
+  height: 4px;
+  content: " ";
+  text-shadow: none;
+  background-color: black;
+  width: 250px;
+}
+#title-third :after {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 0 2px 20px;
+  height: 4px;
+  content: " ";
+  text-shadow: none;
+  background-color: black;
+  width: 250px;
+}
 #title-third h2 {
   padding: 0px 28px;
 }
@@ -248,7 +309,7 @@ footer button:hover {
 }
 @media all and (min-width: 1024px) and (max-width: 2559px) {
   main {
-    width: 63%;
+    width: 89%;
   }
 
   .menu_title h2 {
@@ -269,6 +330,10 @@ footer button:hover {
   }
 }
 @media all and (min-width: 1440px) and (max-width: 2559px) {
+  main {
+    width: 69%;
+  }
+
   #menu-header i {
     font-size: 70px;
   }
@@ -281,9 +346,9 @@ footer button:hover {
   }
 
   .menu_elmnt li {
-    width: 75%;
-    padding-left: 12%;
-    font-size: 23px;
+    width: 71%;
+    padding-left: 14%;
+    font-size: 18px;
   }
   .menu_elmnt p {
     line-height: 45px;

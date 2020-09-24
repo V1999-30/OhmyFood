@@ -67,6 +67,29 @@ main{
     justify-content: center;
     align-items: center;
 
+    :before{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 20px 2px 0;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: black;
+        width: 250px;
+
+    }
+
+    :after{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 0 2px 20px;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: black;
+        width: 250px;
+    }
+
     h2{
         @include title-h2-animation;
         font-family: "caveatregular";
@@ -228,7 +251,7 @@ footer button:hover{
 @media all and (min-width: 1024px) and (max-width: 2559px)
 {
     main{
-        width: 75%;
+        width: 71%;
         margin-bottom: 50px;
     }
 
@@ -253,6 +276,9 @@ footer button:hover{
 
 @media all and (min-width: 1440px) and (max-width: 2559px)
 {
+    main{
+        width: 61%;
+    }
     .menu_title {
         h2{
             font-size: 33px;

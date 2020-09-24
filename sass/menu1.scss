@@ -108,14 +108,88 @@ main{
     }
 }
 
-#title-second h2 {
+#title-first{
+    :before{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 120px 2px 0;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: black;
+        width: 200px;
+
+    }
+
+    :after{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 0 2px 120px;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: black;
+        width: 200px;
+    }
+}
+
+#title-second{
+    :before{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 70px 2px 0;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: black;
+        width: 235px;
+
+    }
+
+    :after{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 0 2px 55px;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: black;
+        width: 235px;
+    }
+
+    h2 {
     padding: 0px 22px;
+    }
 }
 
-#title-third h2 {
+#title-third{
+    :before{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 20px 2px 0;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: black;
+        width: 250px;
+
+    }
+
+    :after{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 0 2px 20px;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: black;
+        width: 250px;
+    }
+
+     h2 {
     padding: 0px 28px;
+     }
 }
-
 #menu1-footer{
     text-align: center;
     padding: 0px 0px 75px 0px;
@@ -260,7 +334,7 @@ footer button:hover{
 @media all and (min-width: 1024px) and (max-width: 2559px)
 {
     main{
-        width: 63%;
+        width: 89%;
     }
 
     .menu_title{
@@ -288,6 +362,9 @@ footer button:hover{
 
 @media all and (min-width: 1440px) and (max-width: 2559px)
 {
+    main{
+        width: 69%;
+    }
     #menu-header{
         i{
             font-size: 70px;
@@ -306,9 +383,9 @@ footer button:hover{
 
     .menu_elmnt{
         li{
-            width: 75%;
-            padding-left: 12%;
-            font-size: 23px;
+            width: 71%;
+            padding-left: 14%;
+            font-size: 18px;
         }
 
         p{

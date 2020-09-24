@@ -64,14 +64,34 @@ main {
   justify-content: center;
   align-items: center;
 }
+.menu_title :before {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 20px 2px 0;
+  height: 4px;
+  content: " ";
+  text-shadow: none;
+  background-color: black;
+  width: 250px;
+}
+.menu_title :after {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 0 2px 20px;
+  height: 4px;
+  content: " ";
+  text-shadow: none;
+  background-color: black;
+  width: 250px;
+}
 .menu_title h2 {
   position: relative;
-  padding: 0px 50.5px;
+  padding: 5px;
   margin: 0;
   color: inherit;
   text-decoration: none;
-  background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
-  background-size: 0 100%;
+  background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+  background-size: 0% 100%;
   transition: background-size 0.3s;
 }
 .menu_title :hover {
