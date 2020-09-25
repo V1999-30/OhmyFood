@@ -125,14 +125,12 @@ header{
     transition: .3s ease-in-out;
     width: 40%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    padding-top: 60%;
+    padding: 225px 0px 225px 0px;
     margin-top: 100px;
-    position: relative;
+    text-align: center;
 
     a {
-        position: absolute;
         top: 38%;
-        text-align: center;
         text-decoration: none;
         width: 100%;
     }
@@ -146,13 +144,10 @@ header{
 
 #menu-1{
     background-color: $color-back-menu1;
-    line-height: 0px;
     margin-right: 20%;
 
     i {
         font-size: 60px;
-        height: 30px;
-        line-height: 0;
         background: rgb(253,29,29);
         background: linear-gradient(90deg, rgba(253,29,29,1) 50%, rgba(246,145,106,1) 100%);
         -webkit-background-clip: text;
@@ -163,13 +158,14 @@ header{
         color: #000;
         font-family: "zhi_mang_xingregular";
         font-size: $size-h2_menu-1-3;
+        margin: 0;
     }
 
     h3 {
         font-family: "short_stackregular";
         color: #000;
         font-size: $size-h3;
-        line-height: 80px;
+        margin: 15px;
     }
 }
 
@@ -179,8 +175,6 @@ header{
     h2{
         font-family: "croissant_oneregular";
         font-size: 30px;
-        line-height: 10px;
-        height: 24px;
         background: rgb(227,138,18);
         background: linear-gradient(90deg, rgba(227,138,18,1) 25%, rgba(143,90,255,1) 80%);
         -webkit-background-clip: text;
@@ -191,6 +185,7 @@ header{
         font-family: "tinosregular";
         color: #c77412;
         font-size: $size-h3;
+        margin: 0;
     }
 }
 
@@ -205,15 +200,13 @@ header{
         -webkit-text-fill-color: transparent;
         font-family: "dancing_scriptregular";
         font-size: $size-h2_menu-1-3;
-        height: 24px;
-        line-height: 0;
     }
 
     h3 {
         font-family: "shadows_into_lightregular";
         color: $color2-menu3;
-        line-height: 100px;
         font-size: $size-h3;
+        margin: 0;
     }
 }
 
@@ -234,6 +227,7 @@ header{
             font-family: "shadows_into_lightregular";
             font-size: $size-h3;
             color: $color2-menu4;
+            margin: 0;
         }  
     }
 }

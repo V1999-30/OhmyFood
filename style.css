@@ -93,14 +93,12 @@ header a {
   transition: 0.3s ease-in-out;
   width: 40%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  padding-top: 60%;
+  padding: 225px 0px 225px 0px;
   margin-top: 100px;
-  position: relative;
+  text-align: center;
 }
 .all_menus a {
-  position: absolute;
   top: 38%;
-  text-align: center;
   text-decoration: none;
   width: 100%;
 }
@@ -112,13 +110,10 @@ header a {
 
 #menu-1 {
   background-color: #fcdfdb;
-  line-height: 0px;
   margin-right: 20%;
 }
 #menu-1 i {
   font-size: 60px;
-  height: 30px;
-  line-height: 0;
   background: #fd1d1d;
   background: linear-gradient(90deg, #fd1d1d 50%, #f6916a 100%);
   -webkit-background-clip: text;
@@ -128,12 +123,13 @@ header a {
   color: #000;
   font-family: "zhi_mang_xingregular";
   font-size: 40px;
+  margin: 0;
 }
 #menu-1 h3 {
   font-family: "short_stackregular";
   color: #000;
   font-size: 50px;
-  line-height: 80px;
+  margin: 15px;
 }
 
 #menu-2 {
@@ -142,8 +138,6 @@ header a {
 #menu-2 h2 {
   font-family: "croissant_oneregular";
   font-size: 30px;
-  line-height: 10px;
-  height: 24px;
   background: #e38a12;
   background: linear-gradient(90deg, #e38a12 25%, #8f5aff 80%);
   -webkit-background-clip: text;
@@ -153,6 +147,7 @@ header a {
   font-family: "tinosregular";
   color: #c77412;
   font-size: 50px;
+  margin: 0;
 }
 
 #menu-3 {
@@ -166,14 +161,12 @@ header a {
   -webkit-text-fill-color: transparent;
   font-family: "dancing_scriptregular";
   font-size: 40px;
-  height: 24px;
-  line-height: 0;
 }
 #menu-3 h3 {
   font-family: "shadows_into_lightregular";
   color: #13b4ff;
-  line-height: 100px;
   font-size: 50px;
+  margin: 0;
 }
 
 #menu-4 {
@@ -191,6 +184,7 @@ header a {
   font-family: "shadows_into_lightregular";
   font-size: 50px;
   color: #72bf56;
+  margin: 0;
 }
 
 #soon {
