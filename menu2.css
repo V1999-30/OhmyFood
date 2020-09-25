@@ -1,14 +1,10 @@
 @font-face {
   font-family: "montserratbold";
   src: url("./polices/montserrat-bold-webfont.woff2") format("woff2"), url("./polices/montserrat-bold-webfont.woff") format("woff");
-  font-weight: "normal";
-  font-style: "normal";
 }
 @font-face {
   font-family: "croissant_oneregular";
   src: url("./polices/croissantone-regular-webfont.woff2") format("woff2"), url("./polices/croissantone-regular-webfont.woff") format("woff");
-  font-weight: "normal";
-  font-style: "normal";
 }
 html {
   margin: 0;
@@ -147,18 +143,23 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-
-footer button {
-  height: 100%;
-  padding: 17px;
+footer #left {
   font-size: 22px;
+  padding: 23px;
   background-color: #579C87;
+  font-family: sans-serif;
+  text-decoration: none;
   border: none;
   color: #FDCB46;
 }
-
-footer button:hover {
-  animation: shake 0.8s infinite;
+footer #right {
+  font-size: 22px;
+  padding: 23px;
+  background-color: #579C87;
+  font-family: sans-serif;
+  text-decoration: none;
+  border: none;
+  color: #FDCB46;
 }
 
 @keyframes shake {

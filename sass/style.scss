@@ -5,8 +5,6 @@
     font-family: "caveatregular";
     src: url("./polices/caveat-regular-webfont.woff2") format("woff2"),
          url("./polices/caveat-regular-webfont.woff") format("woff");
-    font-weight: "normal";
-    font-style: "normal";
 }
 
 
@@ -16,8 +14,6 @@
     font-family: "croissant_oneregular";
     src: url("./polices/croissantone-regular-webfont.woff2") format("woff2"),
          url("./polices/croissantone-regular-webfont.woff") format("woff");
-    font-weight: "normal";
-    font-style: "normal";
 }
 
 
@@ -27,8 +23,6 @@
     font-family: "dancing_scriptregular";
     src: url("./polices/dancingscript-variablefont_wght-webfont.woff2") format("woff2"),
          url("./polices/dancingscript-variablefont_wght-webfont.woff") format("woff");
-    font-weight: "normal";
-    font-style: "normal";
 }
 
 
@@ -38,8 +32,6 @@
     font-family: "kaushan_scriptregular";
     src: url("./polices/kaushanscript-regular-webfont.woff2") format("woff2"),
          url("./polices/kaushanscript-regular-webfont.woff") format("woff");
-    font-weight: "normal";
-    font-style: "normal";
 }
 
 
@@ -47,8 +39,6 @@
     font-family: "montserratbold";
     src: url("./polices/montserrat-bold-webfont.woff2") format("woff2"),
          url("./polices/montserrat-bold-webfont.woff") format("woff");
-    font-weight: "normal";
-    font-style: "normal";
 }
 
 
@@ -58,8 +48,6 @@
     font-family: "shadows_into_lightregular";
     src: url("./polices/shadowsintolight-regular-webfont.woff2") format("woff2"),
          url("./polices/shadowsintolight-regular-webfont.woff") format("woff");
-    font-weight: "normal";
-    font-style: "normal";
 }
 
 
@@ -69,8 +57,6 @@
     font-family: "short_stackregular";
     src: url("./polices/shortstack-regular-webfont.woff2") format("woff2"),
          url("./polices/shortstack-regular-webfont.woff") format("woff");
-    font-weight: "normal";
-    font-style: "normal";
 }
 
 
@@ -80,9 +66,6 @@
     font-family: "tinosregular";
     src: url("./polices/tinos-regular-webfont.woff2") format("woff2"),
          url("./polices/tinos-regular-webfont.woff") format("woff");
-    font-weight: "normal";
-    font-style: "normal";
-
 }
 
 
@@ -92,8 +75,6 @@
     font-family: "zhi_mang_xingregular";
     src: url("./polices/zhimangxing-regular-webfont.woff2") format("woff2"),
          url("./polices/zhimangxing-regular-webfont.woff") format("woff");
-    font-weight: "normal";
-    font-style: "normal";
 }
 
 html {
@@ -134,7 +115,7 @@ header{
         width: 100%;
     }
 
-    a:hover{
+    a :hover{
         -webkit-transform: scale(1.3);
         transform: scale(1.1);
         opacity: 0.6;
@@ -244,10 +225,10 @@ header{
     border: none
 }
 
-.loading span {
+.loading {
     width: 12px;
     height: 12px;
-    margin-left: 13px;
+    margin: 10px;
     background-color: #ffd957;
     border-radius: 50%;
     display: inline-block;
@@ -274,14 +255,14 @@ header{
 
 footer {
     @include footer;
-}
-
-footer button {
-    @include footer-button;
-}
-
-footer button:hover{
-    animation: shake 0.8s infinite;
+    #left:hover{
+        animation: shake 0.8s infinite;
+        }
+    
+        #right:hover{
+            animation: shake 0.8s infinite;
+        }
+    
 }
 
 @keyframes shake {

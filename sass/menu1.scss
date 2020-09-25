@@ -5,24 +5,18 @@
     font-family: "zhi_mang_xingregular";
     src: url("./polices/zhimangxing-regular-webfont.woff2") format("woff2"),
          url("./polices/zhimangxing-regular-webfont.woff") format("woff");
-    font-weight: "normal";
-    font-style: "normal";
 }
 
 @font-face {
     font-family: "montserratbold";
     src: url("./polices/montserrat-bold-webfont.woff2") format("woff2"),
          url("./polices/montserrat-bold-webfont.woff") format("woff");
-    font-weight: "normal";
-    font-style: "normal";
 }
 
 @font-face {
     font-family: "short_stackregular";
     src: url("./polices/shortstack-regular-webfont.woff2") format("woff2"),
          url("./polices/shortstack-regular-webfont.woff") format("woff");
-    font-weight: "normal";
-    font-style: "normal";
 }
 
 html {
@@ -211,14 +205,13 @@ main{
 
 footer {
     @include footer;
-}
+    #left{
+        @include footer-button;
+    }
 
-footer button {
-    @include footer-button;
-}
-
-footer button:hover{
-    animation: shake 0.8s infinite;
+    #right{
+        @include footer-button;
+    }
 }
 
 @keyframes shake {

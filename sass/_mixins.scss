@@ -37,10 +37,11 @@
 }
 
 @mixin footer-button{
-    height: 100%;
-    padding: 17px;
     font-size: 22px;
+    padding: 23px;
     background-color: $color-primary;
+    font-family: sans-serif;
+    text-decoration: none;
     border: none;
     color: #FDCB46;
 }

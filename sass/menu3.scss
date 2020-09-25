@@ -5,24 +5,18 @@
     font-family: "montserratbold";
     src: url("./polices/montserrat-bold-webfont.woff2") format("woff2"),
          url("./polices/montserrat-bold-webfont.woff") format("woff");
-    font-weight: "normal";
-    font-style: "normal";
 }
 
 @font-face {
     font-family: "caveatregular";
     src: url("./polices/caveat-regular-webfont.woff2") format("woff2"),
          url("./polices/caveat-regular-webfont.woff") format("woff");
-    font-weight: "normal";
-    font-style: "normal";
 }
 
 @font-face {
     font-family: "dancing_scriptregular";
     src: url("./polices/dancingscript-variablefont_wght-webfont.woff2") format("woff2"),
          url("./polices/dancingscript-variablefont_wght-webfont.woff") format("woff");
-    font-weight: "normal";
-    font-style: "normal";
 }
 
 html {
@@ -132,14 +126,13 @@ main{
 
 footer {
     @include footer;
-}
+    #left{
+        @include footer-button;
+    }
 
-footer button {
-    @include footer-button;
-}
-
-footer button:hover{
-    animation: shake 0.8s infinite;
+    #right{
+        @include footer-button;
+    }
 }
 
 @keyframes shake {
