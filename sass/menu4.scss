@@ -38,6 +38,7 @@ main{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     background-color: $color-back-menu3;
     margin: auto;
+    margin-bottom: 100px;
 
 }
 
@@ -51,8 +52,9 @@ main{
     margin-top: 7%;
 
     h2 {
-        font-size: 40px;
+        font-size: 50px;
         font-family: "kaushan_scriptregular";
+        margin: 0;
     }
 }
 
@@ -60,7 +62,46 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+#title-first{
+    :before{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 75px 2px 0;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background: linear-gradient(90deg, rgba(12,82,10,1) 0%, rgba(182,255,114,0.8673844537815126) 70%);
+        
+        width: 300px;
+
+    }
+
+    :after{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 0 2px 70px;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background: linear-gradient(90deg, rgba(182,255,114,1) 30%, rgba(12,82,10,1) 100%);
+        width: 300px;
+    }
+
+    h2{
+        @include title-h2-animation;
+        font-family: "caveatregular";
+        font-size: 40px;
+        margin: 0;
+    }
+
+    :hover{
+        background-size: 100% 100%;
+    }
+}
+
+#title-second{
     :before{
         display: inline-block;
         justify-content: space-between;
@@ -68,8 +109,8 @@ main{
         height: 4px;
         content: " ";
         text-shadow: none;
-        background-color: black;
-        width: 250px;
+        background: linear-gradient(90deg, rgba(12,82,10,1) 0%, rgba(182,255,114,0.8673844537815126) 70%);
+        width: 300px;
 
     }
 
@@ -80,14 +121,51 @@ main{
         height: 4px;
         content: " ";
         text-shadow: none;
-        background-color: black;
-        width: 250px;
+        background: linear-gradient(90deg, rgba(182,255,114,1) 30%, rgba(12,82,10,1) 100%);
+        width: 300px;
     }
 
     h2{
         @include title-h2-animation;
         font-family: "caveatregular";
-        font-size: 33px;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    :hover{
+        background-size: 100% 100%;
+    }
+}
+
+#title-third{
+    :before{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 5px 2px 0;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background: linear-gradient(90deg, rgba(12,82,10,1) 0%, rgba(182,255,114,0.8673844537815126) 70%);
+        width: 300px;
+
+    }
+
+    :after{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 0 2px 7px;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background: linear-gradient(90deg, rgba(182,255,114,1) 30%, rgba(12,82,10,1) 100%);
+        width: 300px;
+    }
+
+    h2{
+        @include title-h2-animation;
+        font-family: "caveatregular";
+        font-size: 40px;
+        margin: 0;
     }
 
     :hover{
@@ -114,22 +192,21 @@ main{
     }
 }
 
-#title-second h2 {
-    padding: 0px 45px;
-}
-
-#title-third h2 {
-    padding: 0px 25px;
-}
-
 footer {
     @include footer;
+
     #left{
         @include footer-button;
     }
-
+    #left:hover{
+        animation: shake 0.8s infinite;
+    }
+    
     #right{
         @include footer-button;
+    }
+    #right:hover{
+        animation: shake 0.8s infinite;
     }
 }
 
@@ -241,7 +318,7 @@ footer {
     }
 }
 
-@media all and (min-width: 1024px) and (max-width: 2559px)
+@media all and (min-width: 1024px) and (max-width: 1865px)
 {
     main{
         width: 71%;
@@ -267,7 +344,7 @@ footer {
     }
 }
 
-@media all and (min-width: 1440px) and (max-width: 2559px)
+@media all and (min-width: 1440px) and (max-width: 1865px)
 {
     main{
         width: 61%;

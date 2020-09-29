@@ -28,7 +28,7 @@ header{
 }
 
 main{
-    width: 65%;
+    width: 60%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     background-color: $color-back-menu2;
     margin: auto;
@@ -55,6 +55,21 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    h2{
+        @include title-h2-animation;
+    }
+
+    :hover{
+        background-size: 100% 100%;
+    }
+}
+
+#title-first{
+    h2{
+        color: $color-menu2;
+    }
+
     :before{
         display: inline-block;
         justify-content: space-between;
@@ -77,18 +92,6 @@ main{
         background-color: black;
         width: 250px;
     }
-
-    h2{
-        @include title-h2-animation;
-    }
-
-    :hover{
-        background-size: 100% 100%;
-    }
-}
-
-#title-first h2{
-    color: $color-menu2;
 }
 
 #elmnt-first{
@@ -102,9 +105,9 @@ main{
     li{
         display: flex;
         justify-content: space-between;
-        width: 48%;
+        width: 62%;
         font-size: 24px;
-        padding-left: 26%;
+        padding-left: 19%;
     }
 
     p{
@@ -113,9 +116,33 @@ main{
     }
 }
 
-#title-second h2 {
-    color: #9a4a9b;
-    padding: 0px 45px;
+#title-second{
+    h2 {
+        color: #9a4a9b;
+    }
+
+    :before{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 51px 2px 0;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: black;
+        width: 250px;
+
+    }
+
+    :after{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 0 2px 60px;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: black;
+        width: 250px;
+    }
 
 }
 
@@ -123,9 +150,33 @@ main{
     color: #9a4a9b;
 }
 
-#title-third h2 {
-    color: $color2-menu2;
-    padding: 0px 25px;
+#title-third{ 
+    h2 {
+        color: $color2-menu2;
+    }
+
+    :before{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 35px 2px 0;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: black;
+        width: 250px;
+
+    }
+
+    :after{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 0 2px 35px;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: black;
+        width: 250px;
+    }
 }
 
 #elmnt-third{
@@ -134,12 +185,19 @@ main{
 
 footer {
     @include footer;
+
     #left{
         @include footer-button;
     }
-
+    #left:hover{
+        animation: shake 0.8s infinite;
+    }
+    
     #right{
         @include footer-button;
+    }
+    #right:hover{
+        animation: shake 0.8s infinite;
     }
 }
 
@@ -185,6 +243,46 @@ footer {
     .menu_title{
         h2{
             font-size: 17px;
+        }
+    }
+
+    #title-first{
+        h2{
+            margin: 0px;
+            
+        :before{
+            width: 50px;
+        }
+    
+        :after{
+            width: 50px;
+        }
+        }
+    }
+
+    #title-second{
+        h2{
+            margin: 0px;
+            :before{
+                width: 50px;
+            }
+    
+            :after{
+                width: 50px;
+            }
+        }
+    }
+
+    #title-thrid{
+        h2{
+            margin: 0px;
+            :before{
+
+            }
+    
+            :after{
+    
+            }
         }
     }
 
@@ -248,7 +346,7 @@ footer {
     } 
 }
 
-@media all and (min-width: 1024px) and (max-width: 2559px)
+@media all and (min-width: 1024px) and (max-width: 1865px)
 {
     main{
         width: 70%;
@@ -273,7 +371,7 @@ footer {
     }
 }
 
-@media all and (min-width: 1440px) and (max-width: 2559px)
+@media all and (min-width: 1440px) and (max-width: 1865px)
 {
     #menu-header{
         i{

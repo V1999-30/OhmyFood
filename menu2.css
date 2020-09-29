@@ -34,7 +34,7 @@ header a {
 }
 
 main {
-  width: 65%;
+  width: 60%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   background-color: #fff5fe;
   margin: auto;
@@ -60,32 +60,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-.menu_title :before {
-  display: inline-block;
-  justify-content: space-between;
-  margin: 0 20px 2px 0;
-  height: 4px;
-  content: " ";
-  text-shadow: none;
-  background-color: black;
-  width: 250px;
-}
-.menu_title :after {
-  display: inline-block;
-  justify-content: space-between;
-  margin: 0 0 2px 20px;
-  height: 4px;
-  content: " ";
-  text-shadow: none;
-  background-color: black;
-  width: 250px;
-}
 .menu_title h2 {
-  position: relative;
-  padding: 5px;
-  margin: 0;
-  color: inherit;
-  text-decoration: none;
   background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
   background-size: 0% 100%;
   transition: background-size 0.3s;
@@ -96,6 +71,26 @@ main {
 
 #title-first h2 {
   color: #e38a12;
+}
+#title-first :before {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 20px 2px 0;
+  height: 4px;
+  content: " ";
+  text-shadow: none;
+  background-color: black;
+  width: 250px;
+}
+#title-first :after {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 0 2px 20px;
+  height: 4px;
+  content: " ";
+  text-shadow: none;
+  background-color: black;
+  width: 250px;
 }
 
 #elmnt-first {
@@ -109,9 +104,9 @@ main {
 .menu_elmnt li {
   display: flex;
   justify-content: space-between;
-  width: 48%;
+  width: 62%;
   font-size: 24px;
-  padding-left: 26%;
+  padding-left: 19%;
 }
 .menu_elmnt p {
   margin: 0px;
@@ -120,7 +115,26 @@ main {
 
 #title-second h2 {
   color: #9a4a9b;
-  padding: 0px 45px;
+}
+#title-second :before {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 51px 2px 0;
+  height: 4px;
+  content: " ";
+  text-shadow: none;
+  background-color: black;
+  width: 250px;
+}
+#title-second :after {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 0 2px 60px;
+  height: 4px;
+  content: " ";
+  text-shadow: none;
+  background-color: black;
+  width: 250px;
 }
 
 #elmnt-second {
@@ -129,7 +143,26 @@ main {
 
 #title-third h2 {
   color: #651cff;
-  padding: 0px 25px;
+}
+#title-third :before {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 35px 2px 0;
+  height: 4px;
+  content: " ";
+  text-shadow: none;
+  background-color: black;
+  width: 250px;
+}
+#title-third :after {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 0 2px 35px;
+  height: 4px;
+  content: " ";
+  text-shadow: none;
+  background-color: black;
+  width: 250px;
 }
 
 #elmnt-third {
@@ -152,6 +185,9 @@ footer #left {
   border: none;
   color: #FDCB46;
 }
+footer #left:hover {
+  animation: shake 0.8s infinite;
+}
 footer #right {
   font-size: 22px;
   padding: 23px;
@@ -160,6 +196,9 @@ footer #right {
   text-decoration: none;
   border: none;
   color: #FDCB46;
+}
+footer #right:hover {
+  animation: shake 0.8s infinite;
 }
 
 @keyframes shake {
@@ -200,6 +239,29 @@ footer #right {
     font-size: 17px;
   }
 
+  #title-first h2 {
+    margin: 0px;
+  }
+  #title-first h2 :before {
+    width: 50px;
+  }
+  #title-first h2 :after {
+    width: 50px;
+  }
+
+  #title-second h2 {
+    margin: 0px;
+  }
+  #title-second h2 :before {
+    width: 50px;
+  }
+  #title-second h2 :after {
+    width: 50px;
+  }
+
+  #title-thrid h2 {
+    margin: 0px;
+  }
   .menu_elmnt {
     padding: 17px;
   }
@@ -247,7 +309,7 @@ footer #right {
     font-size: 20px;
   }
 }
-@media all and (min-width: 1024px) and (max-width: 2559px) {
+@media all and (min-width: 1024px) and (max-width: 1865px) {
   main {
     width: 70%;
   }
@@ -266,7 +328,7 @@ footer #right {
     font-size: 20px;
   }
 }
-@media all and (min-width: 1440px) and (max-width: 2559px) {
+@media all and (min-width: 1440px) and (max-width: 1865px) {
   #menu-header i {
     font-size: 70px;
   }

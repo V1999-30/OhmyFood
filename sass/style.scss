@@ -100,26 +100,26 @@ header{
 }
 
 .all_menus {
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
     width: 40%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     padding: 225px 0px 225px 0px;
     margin-top: 100px;
     text-align: center;
+}
 
-    a {
-        text-decoration: none;
-        width: 100%;
-    }
+.all_menus a {
+    text-decoration: none;
+    width: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
 
-    a :hover{
-        -webkit-transform: scale(1.3);
-        transform: scale(1.1);
-        opacity: 0.6;
-    }
+.all_menus a :hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.1);
+    opacity: 0.6;
 }
 
 #menu-1{
@@ -255,14 +255,20 @@ header{
 
 footer {
     @include footer;
+
+    #left{
+        @include footer-button;
+    }
     #left:hover{
         animation: shake 0.8s infinite;
-        }
+    }
     
-        #right:hover{
-            animation: shake 0.8s infinite;
-        }
-    
+    #right{
+        @include footer-button;
+    }
+    #right:hover{
+        animation: shake 0.8s infinite;
+    }
 }
 
 @keyframes shake {

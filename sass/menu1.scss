@@ -39,7 +39,7 @@ h2{
 }
 
 main{
-    width: 50%;
+    width: 65%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     background-color: #fcdfdb;
     margin: auto;
@@ -76,6 +76,7 @@ main{
     h2{
         @include title-h2-animation;
         font-family: "short_stackregular";
+        margin: 0;
     }
 
     :hover{
@@ -106,7 +107,7 @@ main{
     :before{
         display: inline-block;
         justify-content: space-between;
-        margin: 0 120px 2px 0;
+        margin: 0 115px 2px 0;
         height: 4px;
         content: " ";
         text-shadow: none;
@@ -118,7 +119,7 @@ main{
     :after{
         display: inline-block;
         justify-content: space-between;
-        margin: 0 0 2px 120px;
+        margin: 0 0 2px 118px;
         height: 4px;
         content: " ";
         text-shadow: none;
@@ -131,28 +132,24 @@ main{
     :before{
         display: inline-block;
         justify-content: space-between;
-        margin: 0 70px 2px 0;
+        margin: 0 52px 2px 0;
         height: 4px;
         content: " ";
         text-shadow: none;
         background-color: black;
-        width: 235px;
+        width: 200px;
 
     }
 
     :after{
         display: inline-block;
         justify-content: space-between;
-        margin: 0 0 2px 55px;
+        margin: 0 0 2px 52px;
         height: 4px;
         content: " ";
         text-shadow: none;
         background-color: black;
-        width: 235px;
-    }
-
-    h2 {
-    padding: 0px 22px;
+        width: 200px;
     }
 }
 
@@ -160,30 +157,27 @@ main{
     :before{
         display: inline-block;
         justify-content: space-between;
-        margin: 0 20px 2px 0;
+        margin: 0 15px 2px 0;
         height: 4px;
         content: " ";
         text-shadow: none;
         background-color: black;
-        width: 250px;
+        width: 200px;
 
     }
 
     :after{
         display: inline-block;
         justify-content: space-between;
-        margin: 0 0 2px 20px;
+        margin: 0 0 2px 15px;
         height: 4px;
         content: " ";
         text-shadow: none;
         background-color: black;
-        width: 250px;
+        width: 200px;
     }
-
-     h2 {
-    padding: 0px 28px;
-     }
 }
+
 #menu1-footer{
     text-align: center;
     padding: 0px 0px 75px 0px;
@@ -205,12 +199,19 @@ main{
 
 footer {
     @include footer;
+
     #left{
         @include footer-button;
     }
-
+    #left:hover{
+        animation: shake 0.8s infinite;
+    }
+    
     #right{
         @include footer-button;
+    }
+    #right:hover{
+        animation: shake 0.8s infinite;
     }
 }
 
@@ -261,7 +262,50 @@ footer {
 
     .menu_title{
         h2{
-            font-size: 20px;
+            font-size: 18px;
+            padding: 0;
+        }
+    }
+
+    #title-first{
+        :before{
+            margin: 0px 52px 2px 0;
+            height: 2px;
+            width: 50px;
+        }
+
+        :after {
+            margin: 0 0 2px 52px;
+            height: 2px;
+            width: 50px;
+        }
+    }
+
+    #title-second{
+        :before{
+            margin: 0px 22px 2px 0;
+            height: 2px;
+            width: 50px;
+        }
+        
+        :after {
+            margin: 0 0 2px 22px;
+            height: 2px;
+            width: 50px;
+        }
+    }
+
+    #title-third{
+        :before{
+            margin: 0px 4px 2px 0;
+            height: 2px;
+            width: 50px;
+        }
+        
+        :after {
+            margin: 0px 0px 2px 4px;
+            height: 2px;
+            width: 50px;
         }
     }
 
@@ -292,9 +336,16 @@ footer {
 
     footer{
         margin-top: 18%;
+        #left{
+            display: flex;
+            align-items: center;
+            padding: 0px 10px;
+        }
 
-        button{
-            font-size: 15px;
+        #right{
+            display: flex;
+            align-items: center;
+            padding: 0px 10px;
         }
     }
 }
@@ -315,6 +366,47 @@ footer {
         }
     }
 
+    #title-first{
+        :before{
+            height: 2px;
+            width: 150px;
+        }
+
+        :after{
+            height: 2px;
+            width: 150px;
+        }
+    }
+
+    #title-second{
+        :before{
+            margin: 0px 80px 2px 0px;
+            height: 2px;
+            width: 150px;
+        }
+
+        :after{
+            margin: 0px 0px 2px 80px;
+            height: 2px;
+            width: 150px;
+        }
+    }
+
+    #title-third{
+        :before{
+            margin: 0px 55px 2px 0px;
+            height: 2px;
+            width: 150px;
+        }
+
+        :after{
+            margin: 0px 0px 2px 55px;
+            height: 2px;
+            width: 150px;
+        }
+    }
+
+
     .menu_elmnt{
         li {
             font-size: 13px;
@@ -324,7 +416,7 @@ footer {
     }
 }
 
-@media all and (min-width: 1024px) and (max-width: 2559px)
+@media all and (min-width: 1024px) and (max-width: 1865px)
 {
     main{
         width: 89%;
@@ -336,11 +428,47 @@ footer {
         }
     }
 
+    #title-first {
+        :before{
+            margin: 0px 110px 2px 0px;
+            height: 3px;
+        }
+
+        :after {
+            margin: 0px 0px 2px 110px;
+            height: 3px;
+        }
+    }
+
+    #title-second{
+        :before{
+            margin: 0px 75px 2px 0px;
+            height: 3px;
+        }
+
+        :after{
+            margin: 0px 0px 2px 75px;
+            height: 3px;
+        }
+    }
+
+    #title-third{
+        :before{
+            margin: 0px 50px 2px 0px;
+            height: 3px;
+        }
+
+        :after{
+            margin: 0px 0px 2px 50px;
+            height: 3px;
+        }
+    }
+
     .menu_elmnt{
         li{
             width: 78%;
             font-size: 17px;
-            padding-left: 12%;
+            padding-left: 11%;
         }
 
         p{
@@ -353,7 +481,7 @@ footer {
     }
 }
 
-@media all and (min-width: 1440px) and (max-width: 2559px)
+@media all and (min-width: 1440px) and (max-width: 1865px)
 {
     main{
         width: 69%;
@@ -371,6 +499,35 @@ footer {
     .menu_title {
         h2{
             font-size: 28px;
+        }
+    }
+
+    #title-first{
+        :before{
+            margin: 0px 95px 2px 0px;
+        }
+
+        :after{
+            margin: 0px 0px 2px 95px; 
+        }
+    }
+    #title-second{
+        :before{
+            margin: 0px 50px 2px 0px;
+        }
+
+        :after{
+            margin: 0px 0px 2px 50px;
+        }
+    }
+
+    #title-third{
+        :before{
+            margin: 0px 25px 2px 0px;
+        }
+
+        :after{
+            margin: 0px 0px 2px 25px;
         }
     }
 
@@ -420,11 +577,47 @@ footer {
         }
     }
 
+    #title-first{
+        :before{
+            margin: 0px 180px 2px 0px;
+            width: 375px;
+        }
+
+        :after{
+            margin: 0px 0px 2px 180px;
+            width: 375px;
+        }
+    }
+
+    #title-second{
+        :before{
+            margin: 0px 82px 2px 0px;
+            width: 375px;
+        }
+
+        :after{
+            margin: 0 0 2px 82px;
+            width: 375px;
+        }
+    }
+
+    #title-third{
+        :before{
+            margin: 0px 20px 2px 0px;
+            width: 375px;
+        }
+
+        :after{
+            margin: 0px 0px 2px 20px;
+            width: 375px;
+        }
+    }
+
     .menu_elmnt{
         li{
             font-size: 30px;
             width: 76%;
-            padding-left: 13%;
+            padding-left: 12%;
         }
 
         p{
@@ -445,10 +638,19 @@ footer {
     footer{
         margin-top: 2%;
         height: 125px;
-    }
 
-    footer button{
-        font-size: 50px;
-    }
+        #left{
+            display: flex;
+            align-items: center;
+            font-size: 50px;
+            padding: 0px 20px;
+        }
 
+        #right{
+            display: flex;
+            align-items: center;
+            font-size: 50px;
+            padding: 0px 50px;
+        }
+    }
 }

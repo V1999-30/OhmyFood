@@ -51,9 +51,10 @@ main{
     -webkit-text-fill-color: transparent;
 
     h2 {
-        font-size: 40px;
+        font-size: 50px;
         font-family: "dancing_scriptregular";
         color: $color1-menu3;
+        margin: 0;
     
     }
 }
@@ -62,39 +63,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    :before{
-        display: inline-block;
-        justify-content: space-between;
-        margin: 0 20px 2px 0;
-        height: 4px;
-        content: " ";
-        text-shadow: none;
-        background-color: black;
-        width: 250px;
-
-    }
-
-    :after{
-        display: inline-block;
-        justify-content: space-between;
-        margin: 0 0 2px 20px;
-        height: 4px;
-        content: " ";
-        text-shadow: none;
-        background-color: black;
-        width: 250px;
-    }
-
-    h2{
-        @include title-h2-animation;
-        font-family: "caveatregular";
-        font-size: 33px;
-    }
-
-    :hover{
-        background-size: 100% 100%;
-    }
 }
 
 .menu_elmnt{
@@ -104,9 +72,9 @@ main{
     li{
         display: flex;
         justify-content: space-between;
-        width: 56%;
-        font-size: 25px;
-        padding-left: 23%;
+        width: 58%;
+        font-size: 30px;
+        padding-left: 20%;
     }
 
     p{
@@ -116,22 +84,129 @@ main{
     }
 }
 
-#title-second h2 {
-    padding: 0px 45px;
+#title-first{
+    :before{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 20px 2px 0;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: #001585;
+        width: 290px;
+
+    }
+
+    h2{
+        @include title-h2-animation;
+        font-family: "caveatregular";
+        font-size: 40px;
+        margin: 0;
+    }
+
+    :hover{
+        background-size: 100% 100%;
+    }
+
+    :after{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 0 2px 20px;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: #001585;
+        width: 290px;
+    }
 }
 
-#title-third h2 {
-    padding: 0px 25px;
+#title-second{
+    :before{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 28px 2px 0;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: #086cb8;
+        width: 290px;
+
+    }
+
+    h2{
+        @include title-h2-animation;
+        font-family: "caveatregular";
+        font-size: 40px;
+        margin: 0;
+    }
+
+    :hover{
+        background-size: 100% 100%;
+    }
+
+    :after{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 0 2px 39px;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: #086cb8;
+        width: 290px;
+    }
+}
+
+#title-third{
+    :before{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 36px 2px 0;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: #84caff;
+        width: 290px;
+
+    }
+
+    h2{
+        @include title-h2-animation;
+        font-family: "caveatregular";
+        font-size: 40px;
+        margin: 0;
+    }
+
+    :hover{
+        background-size: 100% 100%;
+    }
+
+    :after{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 0 0 2px 36px;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: #84caff;
+        width: 290px;
+    }
 }
 
 footer {
     @include footer;
+
     #left{
         @include footer-button;
     }
-
+    #left:hover{
+        animation: shake 0.8s infinite;
+    }
+    
     #right{
         @include footer-button;
+    }
+    #right:hover{
+        animation: shake 0.8s infinite;
     }
 }
 
@@ -242,7 +317,7 @@ footer {
     }
 }
 
-@media all and (min-width: 1024px) and (max-width: 2559px)
+@media all and (min-width: 1024px) and (max-width: 1865px)
 {
     main{
         width: 70%;
@@ -269,7 +344,7 @@ footer {
     }
 }
 
-@media all and (min-width: 1440px) and (max-width: 2559px)
+@media all and (min-width: 1440px) and (max-width: 1865px)
 {
     #menu-header{
         i{
