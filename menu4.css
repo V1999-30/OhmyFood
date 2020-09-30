@@ -46,7 +46,7 @@ main {
 
 #menu-header {
   background: #0c520a;
-  background: linear-gradient(90deg, #0c520a 0%, rgba(182, 255, 114, 0.8673844538) 70%);
+  background: linear-gradient(90deg, #0c520a 27%, #7cd02e 76%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -72,7 +72,7 @@ main {
   height: 4px;
   content: " ";
   text-shadow: none;
-  background: linear-gradient(90deg, #0c520a 0%, rgba(182, 255, 114, 0.8673844538) 70%);
+  background: linear-gradient(90deg, #0c520a 27%, #7cd02e 76%);
   width: 300px;
 }
 #title-first :after {
@@ -82,7 +82,7 @@ main {
   height: 4px;
   content: " ";
   text-shadow: none;
-  background: linear-gradient(90deg, #b6ff72 30%, #0c520a 100%);
+  background: linear-gradient(90deg, #7cd02e 49%, #0c520a 76%);
   width: 300px;
 }
 #title-first h2 {
@@ -104,7 +104,7 @@ main {
   height: 4px;
   content: " ";
   text-shadow: none;
-  background: linear-gradient(90deg, #0c520a 0%, rgba(182, 255, 114, 0.8673844538) 70%);
+  background: linear-gradient(90deg, #0c520a 27%, #7cd02e 76%);
   width: 300px;
 }
 #title-second :after {
@@ -114,7 +114,7 @@ main {
   height: 4px;
   content: " ";
   text-shadow: none;
-  background: linear-gradient(90deg, #b6ff72 30%, #0c520a 100%);
+  background: linear-gradient(90deg, #7cd02e 49%, #0c520a 76%);
   width: 300px;
 }
 #title-second h2 {
@@ -136,7 +136,7 @@ main {
   height: 4px;
   content: " ";
   text-shadow: none;
-  background: linear-gradient(90deg, #0c520a 0%, rgba(182, 255, 114, 0.8673844538) 70%);
+  background: linear-gradient(90deg, #0c520a 27%, #7cd02e 76%);
   width: 300px;
 }
 #title-third :after {
@@ -146,7 +146,7 @@ main {
   height: 4px;
   content: " ";
   text-shadow: none;
-  background: linear-gradient(90deg, #b6ff72 30%, #0c520a 100%);
+  background: linear-gradient(90deg, #7cd02e 49%, #0c520a 76%);
   width: 300px;
 }
 #title-third h2 {
@@ -231,21 +231,55 @@ footer #right:hover {
 
   main {
     width: 90%;
-    margin-bottom: 12%;
   }
 
   #menu-header {
     margin-top: 12%;
   }
-  #menu-header i {
-    font-size: 50px;
-  }
   #menu-header h2 {
     font-size: 30px;
   }
 
-  .menu_title h2 {
-    font-size: 27px;
+  #title-first h2 {
+    font-size: 25px;
+  }
+  #title-first :before {
+    margin: 0 50px 2px 0;
+    height: 3px;
+    width: 50px;
+  }
+  #title-first :after {
+    margin: 0 0 2px 50px;
+    height: 3px;
+    width: 50px;
+  }
+
+  #title-second h2 {
+    font-size: 25px;
+  }
+  #title-second :before {
+    margin: 0 15px 2px 0;
+    height: 3px;
+    width: 50px;
+  }
+  #title-second :after {
+    margin: 0 0 2px 15px;
+    height: 3px;
+    width: 50px;
+  }
+
+  #title-third h2 {
+    font-size: 25px;
+  }
+  #title-third :before {
+    margin: 0 9px 2px 0;
+    height: 3px;
+    width: 50px;
+  }
+  #title-third :after {
+    margin: 0 0 2px 9px;
+    height: 3px;
+    width: 50px;
   }
 
   .menu_elmnt {
@@ -261,15 +295,60 @@ footer #right:hover {
     width: 97%;
   }
 
-  #menu1-footer i {
-    font-size: 50px;
+  footer {
+    margin-top: 18%;
   }
-  #menu1-footer h2 {
-    font-size: 30px;
+  footer #left {
+    display: flex;
+    align-items: center;
+  }
+  footer #right {
+    display: flex;
+    align-items: center;
+  }
+}
+@media all and (min-width: 375px) and (max-width: 424px) {
+  #title-first :before {
+    width: 75px;
+  }
+  #title-first :after {
+    width: 75px;
   }
 
-  footer button {
-    font-size: 15px;
+  #title-second :before {
+    width: 75px;
+  }
+  #title-second :after {
+    width: 75px;
+  }
+
+  #title-third :before {
+    width: 75px;
+  }
+  #title-third :after {
+    width: 75px;
+  }
+}
+@media all and (min-width: 425px) and (max-width: 767px) {
+  #title-first :before {
+    width: 100px;
+  }
+  #title-first :after {
+    width: 100px;
+  }
+
+  #title-second :before {
+    width: 100px;
+  }
+  #title-second :after {
+    width: 100px;
+  }
+
+  #title-third :before {
+    width: 100px;
+  }
+  #title-third :after {
+    width: 100px;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1023px) {
@@ -282,8 +361,38 @@ footer #right:hover {
     margin-bottom: 50px;
   }
 
-  .menu_title h2 {
-    font-size: 30px;
+  #title-first h2 {
+    font-size: 25px;
+  }
+  #title-first :before {
+    width: 200px;
+  }
+  #title-first :after {
+    width: 200px;
+  }
+
+  #title-second h2 {
+    font-size: 25px;
+  }
+  #title-second :before {
+    width: 200px;
+    margin: 0 36px 2px 0;
+  }
+  #title-second :after {
+    width: 200px;
+    margin: 0 0px 2px 36px;
+  }
+
+  #title-third h2 {
+    font-size: 25px;
+  }
+  #title-third :before {
+    width: 200px;
+    margin: 0 30px 2px 0;
+  }
+  #title-third :after {
+    width: 200px;
+    margin: 0 0px 2px 30px;
   }
 
   .menu_elmnt li {
@@ -292,7 +401,7 @@ footer #right:hover {
     padding-left: 10%;
   }
 
-  footer button {
+  footer {
     font-size: 19px;
   }
 }
@@ -306,13 +415,55 @@ footer #right:hover {
     font-size: 30px;
   }
 
+  #title-first h2 {
+    font-size: 25px;
+  }
+  #title-first :before {
+    margin: 0 75px 2px 0;
+    height: 3px;
+    width: 225px;
+  }
+  #title-first :after {
+    margin: 0 0 2px 75px;
+    height: 3px;
+    width: 225px;
+  }
+
+  #title-second h2 {
+    font-size: 25px;
+  }
+  #title-second :before {
+    margin: 0 40px 2px 0;
+    height: 3px;
+    width: 225px;
+  }
+  #title-second :after {
+    margin: 0 0 2px 40px;
+    height: 3px;
+    width: 225px;
+  }
+
+  #title-third h2 {
+    font-size: 25px;
+  }
+  #title-third :before {
+    margin: 0 35px 2px 0;
+    height: 3px;
+    width: 225px;
+  }
+  #title-third :after {
+    margin: 0 0 2px 35px;
+    height: 3px;
+    width: 225px;
+  }
+
   .menu_elmnt li {
     width: 79%;
     font-size: 23px;
     padding-left: 10%;
   }
 
-  footer button {
+  footer {
     font-size: 20px;
   }
 }
@@ -325,11 +476,41 @@ footer #right:hover {
     font-size: 33px;
   }
 
+  #title-first h2 {
+    font-size: 25px;
+  }
+  #title-first :before {
+    width: 300px;
+  }
+  #title-first :after {
+    width: 300px;
+  }
+
+  #title-second h2 {
+    font-size: 25px;
+  }
+  #title-second :before {
+    width: 300px;
+  }
+  #title-second :after {
+    width: 300px;
+  }
+
+  #title-third h2 {
+    font-size: 25px;
+  }
+  #title-third :before {
+    width: 300px;
+  }
+  #title-third :after {
+    width: 300px;
+  }
+
   .menu_elmnt li {
     font-size: 27px;
   }
 
-  footer button {
+  footer {
     font-size: 21px;
   }
 }
@@ -359,29 +540,58 @@ footer #right:hover {
     margin: auto;
   }
 
-  .menu_title h2 {
+  #title-first h2 {
     font-size: 50px;
+  }
+  #title-first :before {
+    width: 500px;
+    margin: 0 100px 2px 0px;
+  }
+  #title-first :after {
+    width: 500px;
+    margin: 0 0 2px 100px;
+  }
+
+  #title-second h2 {
+    font-size: 50px;
+  }
+  #title-second :before {
+    width: 500px;
+    margin: 0 45px 2px 0px;
+  }
+  #title-second :after {
+    width: 500px;
+    margin: 0px 0px 2px 45px;
+  }
+
+  #title-third h2 {
+    font-size: 50px;
+  }
+  #title-third :before {
+    width: 500px;
+    margin: 0px 20px 2px 0px;
+  }
+  #title-third :after {
+    width: 500px;
+    margin: 0px 0px 2px 20px;
   }
 
   .menu_elmnt li {
     font-size: 45px;
+    padding-left: 22%;
   }
   .menu_elmnt p {
     line-height: 90px;
   }
 
-  #menu1-footer i {
-    font-size: 100px;
-  }
-  #menu1-footer h2 {
-    font-size: 70px;
-  }
-
   footer {
     height: 100px;
   }
-  footer button {
-    font-size: 40px;
+  footer #left {
+    font-size: 50px;
+  }
+  footer #right {
+    font-size: 50px;
   }
 }
 

@@ -215,7 +215,7 @@ footer #right:hover {
     transform: translate3d(2px, 0, 0);
   }
 }
-@media all and (min-width: 320px) and (max-width: 767px) {
+@media all and (min-width: 320px) and (max-width: 374px) {
   header {
     height: 83px;
   }
@@ -242,32 +242,52 @@ footer #right:hover {
   #title-first h2 {
     margin: 0px;
   }
-  #title-first h2 :before {
-    width: 50px;
+  #title-first :before {
+    width: 45px;
+    height: 2px;
+    margin: 0px 2px 4px 0px;
   }
-  #title-first h2 :after {
-    width: 50px;
+  #title-first :after {
+    width: 45px;
+    height: 2px;
+    margin: 0px 0px 4px 2px;
   }
 
   #title-second h2 {
     margin: 0px;
   }
-  #title-second h2 :before {
-    width: 50px;
+  #title-second :before {
+    width: 45px;
+    height: 2px;
+    margin: 0px 25px 4px 0px;
   }
-  #title-second h2 :after {
-    width: 50px;
+  #title-second :after {
+    width: 45px;
+    height: 2px;
+    margin: 0px 0px 4px 25px;
   }
 
-  #title-thrid h2 {
+  #title-third h2 {
     margin: 0px;
   }
+  #title-third :before {
+    width: 45px;
+    height: 2px;
+    margin: 0px 10px 4px 0px;
+  }
+  #title-third :after {
+    width: 45px;
+    height: 2px;
+    margin: 0px 0px 4px 10px;
+  }
+
   .menu_elmnt {
     padding: 17px;
   }
   .menu_elmnt li {
     display: initial;
     font-size: 16px;
+    padding-left: 0;
   }
   .menu_elmnt p {
     line-height: 25px;
@@ -277,10 +297,202 @@ footer #right:hover {
 
   footer {
     margin-top: 18%;
-    height: 50px;
   }
-  footer button {
+  footer #left {
+    display: flex;
+    align-items: center;
+  }
+  footer #right {
+    display: flex;
+    align-items: center;
+  }
+}
+@media all and (min-width: 375px) and (max-width: 424px) {
+  header {
+    height: 83px;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+
+  main {
+    width: 90%;
+    margin-bottom: 15%;
+  }
+
+  #menu-header {
+    margin-top: 15%;
+  }
+  #menu-header h2 {
+    font-size: 23px;
+  }
+
+  .menu_title h2 {
     font-size: 17px;
+  }
+
+  #title-first h2 {
+    margin: 0px;
+  }
+  #title-first :before {
+    width: 65px;
+    height: 2px;
+    margin: 0px 3px 4px 0px;
+  }
+  #title-first :after {
+    width: 65px;
+    height: 2px;
+    margin: 0px 0px 4px 3px;
+  }
+
+  #title-second h2 {
+    margin: 0px;
+  }
+  #title-second :before {
+    width: 65px;
+    height: 2px;
+    margin: 0px 28px 4px 0px;
+  }
+  #title-second :after {
+    width: 65px;
+    height: 2px;
+    margin: 0px 0px 4px 28px;
+  }
+
+  #title-third h2 {
+    margin: 0px;
+  }
+  #title-third :before {
+    width: 65px;
+    height: 2px;
+    margin: 0px 14px 4px 0px;
+  }
+  #title-third :after {
+    width: 65px;
+    height: 2px;
+    margin: 0px 0px 4px 14px;
+  }
+
+  .menu_elmnt {
+    padding: 17px;
+  }
+  .menu_elmnt li {
+    display: initial;
+    font-size: 16px;
+    padding-left: 0;
+  }
+  .menu_elmnt p {
+    line-height: 25px;
+    text-align: center;
+    width: 97%;
+  }
+
+  footer {
+    margin-top: 18%;
+  }
+  footer #left {
+    display: flex;
+    align-items: center;
+  }
+  footer #right {
+    display: flex;
+    align-items: center;
+  }
+}
+@media all and (min-width: 425px) and (max-width: 767px) {
+  header {
+    height: 83px;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+
+  main {
+    width: 90%;
+    margin-bottom: 15%;
+  }
+
+  #menu-header {
+    margin-top: 15%;
+  }
+  #menu-header h2 {
+    font-size: 23px;
+  }
+
+  .menu_title h2 {
+    font-size: 17px;
+  }
+
+  .menu_title h2 {
+    margin: 0px;
+  }
+
+  #title-first h2 {
+    margin: 0px;
+  }
+  #title-first :before {
+    width: 75px;
+    height: 2px;
+    margin: 0px 17px 4px 0px;
+  }
+  #title-first :after {
+    width: 75px;
+    height: 2px;
+    margin: 0px 0px 4px 17px;
+  }
+
+  #title-second h2 {
+    margin: 0px;
+  }
+  #title-second :before {
+    width: 75px;
+    height: 2px;
+    margin: 0px 40px 4px 0px;
+  }
+  #title-second :after {
+    width: 75px;
+    height: 2px;
+    margin: 0px 0px 4px 40px;
+  }
+
+  #title-third h2 {
+    margin: 0px;
+  }
+  #title-third :before {
+    width: 75px;
+    height: 2px;
+    margin: 0px 25px 4px 0px;
+  }
+  #title-third :after {
+    width: 75px;
+    height: 2px;
+    margin: 0px 0px 4px 25px;
+  }
+
+  .menu_elmnt {
+    padding: 17px;
+  }
+  .menu_elmnt li {
+    display: initial;
+    font-size: 16px;
+    padding-left: 0;
+  }
+  .menu_elmnt p {
+    line-height: 25px;
+    text-align: center;
+    width: 97%;
+  }
+
+  footer {
+    margin-top: 18%;
+  }
+  footer #left {
+    display: flex;
+    align-items: center;
+  }
+  footer #right {
+    display: flex;
+    align-items: center;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1023px) {
@@ -296,9 +508,51 @@ footer #right:hover {
     font-size: 24px;
   }
 
+  #title-first h2 {
+    margin: 0px;
+  }
+  #title-first :before {
+    width: 175px;
+    height: 2px;
+    margin: 0px 20px 4px 0px;
+  }
+  #title-first :after {
+    width: 175px;
+    height: 2px;
+    margin: 0px 0px 4px 20px;
+  }
+
+  #title-second h2 {
+    margin: 0px;
+  }
+  #title-second :before {
+    width: 175px;
+    height: 2px;
+    margin: 0px 53px 4px 0px;
+  }
+  #title-second :after {
+    width: 175px;
+    height: 2px;
+    margin: 0px 0px 4px 50px;
+  }
+
+  #title-third h2 {
+    margin: 0px;
+  }
+  #title-third :before {
+    width: 175px;
+    height: 2px;
+    margin: 0px 35px 4px 0px;
+  }
+  #title-third :after {
+    width: 175px;
+    height: 2px;
+    margin: 0px 0px 4px 35px;
+  }
+
   .menu_elmnt li {
     font-size: 18px;
-    width: 80%;
+    width: 79%;
     padding-left: 10%;
   }
 
@@ -316,10 +570,53 @@ footer #right:hover {
 
   .menu_title h2 {
     font-size: 25px;
+    margin: 0;
+  }
+
+  #title-first h2 {
+    margin: 0px;
+  }
+  #title-first :before {
+    width: 160px;
+    height: 2px;
+    margin: 0px 35px 4px 0px;
+  }
+  #title-first :after {
+    width: 160px;
+    height: 2px;
+    margin: 0px 0px 4px 35px;
+  }
+
+  #title-second h2 {
+    margin: 0px;
+  }
+  #title-second :before {
+    width: 160px;
+    height: 2px;
+    margin: 0px 68px 4px 0px;
+  }
+  #title-second :after {
+    width: 160px;
+    height: 2px;
+    margin: 0px 0px 4px 65px;
+  }
+
+  #title-third h2 {
+    margin: 0px;
+  }
+  #title-third :before {
+    width: 160px;
+    height: 2px;
+    margin: 0px 50px 4px 0px;
+  }
+  #title-third :after {
+    width: 160px;
+    height: 2px;
+    margin: 0px 0px 4px 50px;
   }
 
   .menu_elmnt li {
-    width: 83%;
+    width: 82%;
     font-size: 20px;
     padding-left: 9%;
   }
@@ -340,6 +637,48 @@ footer #right:hover {
     font-size: 28px;
   }
 
+  #title-first h2 {
+    margin: 0px;
+  }
+  #title-first :before {
+    width: 220px;
+    height: 2px;
+    margin: 0px 78px 4px 0px;
+  }
+  #title-first :after {
+    width: 220px;
+    height: 2px;
+    margin: 0px 0px 4px 78px;
+  }
+
+  #title-second h2 {
+    margin: 0px;
+  }
+  #title-second :before {
+    width: 220px;
+    height: 2px;
+    margin: 0px 115px 4px 0px;
+  }
+  #title-second :after {
+    width: 220px;
+    height: 2px;
+    margin: 0px 0px 4px 115px;
+  }
+
+  #title-third h2 {
+    margin: 0px;
+  }
+  #title-third :before {
+    width: 220px;
+    height: 2px;
+    margin: 0px 95px 4px 0px;
+  }
+  #title-third :after {
+    width: 220px;
+    height: 2px;
+    margin: 0px 0px 4px 95px;
+  }
+
   .menu_elmnt li {
     font-size: 23px;
     width: 70%;
@@ -351,42 +690,71 @@ footer #right:hover {
   }
 }
 @media all and (min-width: 2560px) {
-  header {
-    height: 150px;
-  }
-  header h1 {
-    font-size: 100px;
-    padding-top: 0px;
-  }
-
-  h2 {
-    font-size: 50px;
-  }
-
   main {
-    width: 80%;
+    width: 50%;
   }
 
-  #menu-header h2 {
+  #menu-header i {
     font-size: 70px;
+  }
+  #menu-header h2 {
+    font-size: 45px;
+  }
+
+  .menu_title h2 {
+    font-size: 28px;
+  }
+
+  #title-first h2 {
+    margin: 0px;
+  }
+  #title-first :before {
+    width: 380px;
+    height: 2px;
+    margin: 0px 78px 4px 0px;
+  }
+  #title-first :after {
+    width: 380px;
+    height: 2px;
+    margin: 0px 0px 4px 78px;
+  }
+
+  #title-second h2 {
+    margin: 0px;
+  }
+  #title-second :before {
+    width: 380px;
+    height: 2px;
+    margin: 0px 115px 4px 0px;
+  }
+  #title-second :after {
+    width: 380px;
+    height: 2px;
+    margin: 0px 0px 4px 115px;
+  }
+
+  #title-third h2 {
+    margin: 0px;
+  }
+  #title-third :before {
+    width: 380px;
+    height: 2px;
+    margin: 0px 95px 4px 0px;
+  }
+  #title-third :after {
+    width: 380px;
+    height: 2px;
+    margin: 0px 0px 4px 95px;
   }
 
   .menu_elmnt li {
-    font-size: 43px;
-    width: 60%;
+    font-size: 23px;
+    width: 55%;
     padding-left: 21%;
-  }
-  .menu_elmnt p {
-    line-height: 90px;
-  }
-
-  footer {
-    margin-top: 8%;
-    height: 125px;
   }
 
   footer button {
-    font-size: 50px;
+    font-size: 21px;
   }
 }
 

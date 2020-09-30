@@ -245,9 +245,60 @@ footer {
         }
     }
 
-    .menu_title{
+    #title-first{
         h2{
-            font-size: 25px;
+            margin: 0px;
+            font-size: 20px;
+        }
+
+        :before{
+            width: 60px;
+            height: 2px;
+            margin: 0px 10px 4px 0px;
+        }
+    
+        :after{
+            width: 60px;
+            height: 2px;
+            margin: 0px 0px 4px 10px;
+        }
+    }
+
+    #title-second{
+        h2{
+            margin: 0px;
+            font-size: 20px;
+        }
+
+        :before{
+            width: 60px;
+            height: 2px;
+            margin: 0px 10px 4px 0px;
+        }
+    
+        :after{
+            width: 60px;
+            height: 2px;
+            margin: 0px 0px 4px 10px;
+        }
+    }
+
+    #title-third{
+        h2{
+            margin: 0px;
+            font-size: 20px;
+        }
+
+        :before{
+            width: 60px;
+            height: 2px;
+            margin: 0px 10px 4px 0px;
+        }
+    
+        :after{
+            width: 60px;
+            height: 2px;
+            margin: 0px 0px 4px 10px;
         }
     }
 
@@ -266,21 +317,83 @@ footer {
         }
     }
 
-    #menu1-footer {
-        i{
-            font-size: 50px;
-        }
-
-        h2{
-            font-size: 30px;
-        }
-    }
-
     footer{
         margin-top: 7%;
 
         button{
             font-size: 18px;
+        }
+    }
+}
+
+@media all and (min-width: 375px) and (max-width: 424px)
+{
+    #title-first{
+
+        :before{
+            width: 80px;
+        }
+    
+        :after{
+            width: 80px;
+        }
+    }
+
+    #title-second{
+
+        :before{
+            width: 80px;
+        }
+    
+        :after{
+            width: 80px;
+        }
+    }
+
+    #title-third{
+
+        :before{
+            width: 80px;
+        }
+    
+        :after{
+            width: 80px;
+        }
+    }
+}
+
+@media all and (min-width: 425px) and (max-width: 767px)
+{
+    #title-first{
+
+        :before{
+            width: 100px;
+        }
+    
+        :after{
+            width: 100px;
+        }
+    }
+
+    #title-second{
+
+        :before{
+            width: 100px;
+        }
+    
+        :after{
+            width: 100px;
+        }
+    }
+
+    #title-third{
+
+        :before{
+            width: 100px;
+        }
+    
+        :after{
+            width: 100px;
         }
     }
 }
@@ -302,6 +415,59 @@ footer {
         }
     }
 
+    #title-first{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 125px;
+            height: 2px;
+            margin: 0px 15px 4px 0px;
+        }
+    
+        :after{
+            width: 125px;
+            height: 2px;
+            margin: 0px 0px 4px 15px;
+        }
+    }
+
+    #title-second{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 125px;
+            height: 2px;
+            margin: 0px 22px 4px 0px;
+        }
+    
+        :after{
+            width: 125px;
+            height: 2px;
+            margin: 0px 0px 4px 22px;
+        }
+    }
+
+    #title-third{
+        h2{
+            margin: 0px;
+        }
+        :before{
+            width: 125px;
+            height: 2px;
+            margin: 0px 32px 4px 0px;
+        }
+
+        :after{
+            width: 125px;
+            height: 2px;
+            margin: 0px 0px 4px 32px;
+        }
+    }
+
     .menu_elmnt{
         li {
             font-size: 20px;
@@ -310,10 +476,8 @@ footer {
         }
     }
 
-    footer{
-        button{
-            font-size: 18px;
-        }
+    footer button{
+        font-size: 18px;
     }
 }
 
@@ -326,6 +490,59 @@ footer {
     .menu_title{
         h2{
             font-size: 29px;
+        }
+    }
+
+    #title-first{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 175px;
+            height: 3px;
+            margin: 0px 25px 4px 0px;
+        }
+    
+        :after{
+            width: 175px;
+            height: 3px;
+            margin: 0px 0px 4px 25px;
+        }
+    }
+
+    #title-second{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 175px;
+            height: 3px;
+            margin: 0px 32px 4px 0px;
+        }
+    
+        :after{
+            width: 175px;
+            height: 3px;
+            margin: 0px 0px 4px 32px;
+        }
+    }
+
+    #title-third{
+        h2{
+            margin: 0px;
+        }
+        :before{
+            width: 175px;
+            height: 3px;
+            margin: 0px 42px 4px 0px;
+        }
+
+        :after{
+            width: 175px;
+            height: 3px;
+            margin: 0px 0px 4px 42px;
         }
     }
 
@@ -359,6 +576,59 @@ footer {
     .menu_title {
         h2{
             font-size: 30px;
+        }
+    }
+
+    #title-first{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 250px;
+            height: 3px;
+            margin: 0px 78px 4px 0px;
+        }
+    
+        :after{
+            width: 250px;
+            height: 3px;
+            margin: 0px 0px 4px 78px;
+        }
+    }
+
+    #title-second{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 250px;
+            height: 3px;
+            margin: 0px 85px 4px 0px;
+        }
+    
+        :after{
+            width: 250px;
+            height: 2px;
+            margin: 0px 0px 4px 85px;
+        }
+    }
+
+    #title-third{
+        h2{
+            margin: 0px;
+        }
+        :before{
+            width: 250px;
+            height: 2px;
+            margin: 0px 95px 4px 0px;
+        }
+
+        :after{
+            width: 250px;
+            height: 2px;
+            margin: 0px 0px 4px 95px;
         }
     }
 
@@ -411,6 +681,60 @@ footer {
         }
     }
 
+
+    #title-first{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 500px;
+            height: 3px;
+            margin: 0px 78px 4px 0px;
+        }
+    
+        :after{
+            width: 500px;
+            height: 3px;
+            margin: 0px 0px 4px 78px;
+        }
+    }
+
+    #title-second{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 500px;
+            height: 3px;
+            margin: 0px 115px 4px 0px;
+        }
+    
+        :after{
+            width: 500px;
+            height: 2px;
+            margin: 0px 0px 4px 115px;
+        }
+    }
+
+    #title-third{
+        h2{
+            margin: 0px;
+        }
+        :before{
+            width: 500px;
+            height: 2px;
+            margin: 0px 95px 4px 0px;
+        }
+
+        :after{
+            width: 500px;
+            height: 2px;
+            margin: 0px 0px 4px 95px;
+        }
+    }
+
     .menu_elmnt{
         li{
             font-size: 43px;
@@ -421,22 +745,7 @@ footer {
         }
     }
 
-    #menu1-footer{
-        i{
-            font-size: 100px;
-        }
-
-        h2{
-            font-size: 70px;
-        }
+    footer button{
+        font-size: 21px;
     }
-
-    footer{
-        height: 100px;
-
-        button{
-            font-size: 35px;
-        }
-    }
-
 }

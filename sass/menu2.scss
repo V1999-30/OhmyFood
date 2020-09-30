@@ -217,7 +217,7 @@ footer {
     }
 }
 
-@media all and (min-width: 320px) and (max-width: 767px)
+@media all and (min-width: 320px) and (max-width: 374px)
 {
     header{
         height: 83px;
@@ -249,40 +249,53 @@ footer {
     #title-first{
         h2{
             margin: 0px;
-            
+        }
+
         :before{
-            width: 50px;
+            width: 45px;
+            height: 2px;
+            margin: 0px 2px 4px 0px;
         }
     
         :after{
-            width: 50px;
-        }
+            width: 45px;
+            height: 2px;
+            margin: 0px 0px 4px 2px;
         }
     }
 
     #title-second{
         h2{
             margin: 0px;
-            :before{
-                width: 50px;
-            }
+        }
+
+        :before{
+            width: 45px;
+            height: 2px;
+            margin: 0px 25px 4px 0px;
+        }
     
-            :after{
-                width: 50px;
-            }
+        :after{
+            width: 45px;
+            height: 2px;
+            margin: 0px 0px 4px 25px;
         }
     }
 
-    #title-thrid{
+    #title-third{
         h2{
             margin: 0px;
-            :before{
+        }
+        :before{
+            width: 45px;
+            height: 2px;
+            margin: 0px 10px 4px 0px;
+        }
 
-            }
-    
-            :after{
-    
-            }
+        :after{
+            width: 45px;
+            height: 2px;
+            margin: 0px 0px 4px 10px;
         }
     }
 
@@ -292,6 +305,7 @@ footer {
         li{
             display: initial;
             font-size: 16px;
+            padding-left: 0;
         }
 
         p{
@@ -303,13 +317,255 @@ footer {
 
     footer{
         margin-top: 18%;
-        height: 50px;
+        #left{
+            display: flex;
+            align-items: center;
+        }
 
-        button{
-            font-size: 17px;
+        #right{
+            display: flex;
+            align-items: center;
         }
     }
 }
+
+@media all and (min-width: 375px) and (max-width: 424px)
+{
+    header{
+        height: 83px;
+
+        h1{
+            font-size: 40px;
+        }
+    }
+    
+    main{
+        width: 90%;
+        margin-bottom: 15%;
+    }
+
+    #menu-header{
+        margin-top: 15%;
+
+        h2{
+            font-size: 23px;
+        }
+    }
+
+    .menu_title{
+        h2{
+            font-size: 17px;
+        }
+    }
+
+    #title-first{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 65px;
+            height: 2px;
+            margin: 0px 3px 4px 0px;
+        }
+
+        :after{
+            width: 65px;
+            height: 2px;
+            margin: 0px 0px 4px 3px;
+        }
+    }
+
+    #title-second{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 65px;
+            height: 2px;
+            margin: 0px 28px 4px 0px;
+        }
+
+        :after{
+            width: 65px;
+            height: 2px;
+            margin: 0px 0px 4px 28px;
+        }
+    }
+
+    #title-third{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 65px;
+            height: 2px;
+            margin: 0px 14px 4px 0px;
+        }
+
+        :after{
+            width: 65px;
+            height: 2px;
+            margin: 0px 0px 4px 14px;
+        }
+    }
+
+    .menu_elmnt{
+        padding: 17px;
+
+        li{
+            display: initial;
+            font-size: 16px;
+            padding-left: 0;
+        }
+
+        p{
+            line-height: 25px;
+            text-align: center;
+            width: 97%;
+        }
+    }
+
+    footer{
+        margin-top: 18%;
+        #left{
+            display: flex;
+            align-items: center;
+        }
+
+        #right{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+@media all and (min-width: 425px) and (max-width: 767px)
+{
+    header{
+        height: 83px;
+
+        h1{
+            font-size: 40px;
+        }
+    }
+    
+    main{
+        width: 90%;
+        margin-bottom: 15%;
+    }
+
+    #menu-header{
+        margin-top: 15%;
+
+        h2{
+            font-size: 23px;
+        }
+    }
+
+    .menu_title{
+        h2{
+            font-size: 17px;
+        }
+    }
+
+    .menu_title{
+
+        h2{
+            margin: 0px;
+        }
+    }
+
+    #title-first{
+
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 75px;
+            height: 2px;
+            margin: 0px 17px 4px 0px;
+        }
+
+        :after{
+            width: 75px;
+            height: 2px;
+            margin: 0px 0px 4px 17px;
+        }
+    }
+
+    #title-second{
+
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 75px;
+            height: 2px;
+            margin: 0px 40px 4px 0px;
+        }
+
+        :after{
+            width: 75px;
+            height: 2px;
+            margin: 0px 0px 4px 40px;
+        }
+    }
+
+    #title-third{
+
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 75px;
+            height: 2px;
+            margin: 0px 25px 4px 0px;
+        }
+
+        :after{
+            width: 75px;
+            height: 2px;
+            margin: 0px 0px 4px 25px;
+        }
+    }
+
+
+    .menu_elmnt{
+        padding: 17px;
+
+        li{
+            display: initial;
+            font-size: 16px;
+            padding-left: 0;
+        }
+
+        p{
+            line-height: 25px;
+            text-align: center;
+            width: 97%;
+        }
+    }
+
+    footer{
+        margin-top: 18%;
+        #left{
+            display: flex;
+            align-items: center;
+        }
+
+        #right{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
 
 @media all and (min-width: 768px) and (max-width: 1023px)
 {
@@ -329,10 +585,63 @@ footer {
         }
     }
 
+    #title-first{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 175px;
+            height: 2px;
+            margin: 0px 20px 4px 0px;
+        }
+    
+        :after{
+            width: 175px;
+            height: 2px;
+            margin: 0px 0px 4px 20px;
+        }
+    }
+
+    #title-second{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 175px;
+            height: 2px;
+            margin: 0px 53px 4px 0px;
+        }
+    
+        :after{
+            width: 175px;
+            height: 2px;
+            margin: 0px 0px 4px 50px;
+        }
+    }
+
+    #title-third{
+        h2{
+            margin: 0px;
+        }
+        :before{
+            width: 175px;
+            height: 2px;
+            margin: 0px 35px 4px 0px;
+        }
+
+        :after{
+            width: 175px;
+            height: 2px;
+            margin: 0px 0px 4px 35px;
+        }
+    }
+
     .menu_elmnt{
         li {
             font-size: 18px;
-            width: 80%;
+            width: 79%;
             padding-left: 10%;
         }
     }
@@ -355,12 +664,66 @@ footer {
     .menu_title{
         h2{
             font-size: 25px;
+            margin: 0;
+        }
+    }
+
+    #title-first{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 160px;
+            height: 2px;
+            margin: 0px 35px 4px 0px;
+        }
+    
+        :after{
+            width: 160px;
+            height: 2px;
+            margin: 0px 0px 4px 35px;
+        }
+    }
+
+    #title-second{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 160px;
+            height: 2px;
+            margin: 0px 68px 4px 0px;
+        }
+    
+        :after{
+            width: 160px;
+            height: 2px;
+            margin: 0px 0px 4px 65px;
+        }
+    }
+
+    #title-third{
+        h2{
+            margin: 0px;
+        }
+        :before{
+            width: 160px;
+            height: 2px;
+            margin: 0px 50px 4px 0px;
+        }
+
+        :after{
+            width: 160px;
+            height: 2px;
+            margin: 0px 0px 4px 50px;
         }
     }
 
     .menu_elmnt{
         li{
-            width: 83%;
+            width: 82%;
             font-size: 20px;
             padding-left: 9%;
         }
@@ -389,6 +752,59 @@ footer {
         }
     }
 
+    #title-first{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 220px;
+            height: 2px;
+            margin: 0px 78px 4px 0px;
+        }
+    
+        :after{
+            width: 220px;
+            height: 2px;
+            margin: 0px 0px 4px 78px;
+        }
+    }
+
+    #title-second{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 220px;
+            height: 2px;
+            margin: 0px 115px 4px 0px;
+        }
+    
+        :after{
+            width: 220px;
+            height: 2px;
+            margin: 0px 0px 4px 115px;
+        }
+    }
+
+    #title-third{
+        h2{
+            margin: 0px;
+        }
+        :before{
+            width: 220px;
+            height: 2px;
+            margin: 0px 95px 4px 0px;
+        }
+
+        :after{
+            width: 220px;
+            height: 2px;
+            margin: 0px 0px 4px 95px;
+        }
+    }
+
     .menu_elmnt{
         li{
             font-size: 23px;
@@ -404,49 +820,88 @@ footer {
 
 @media all and (min-width: 2560px)
 {
-    header{
-        height: 150px;
-
-        h1{
-            font-size: 100px;
-            padding-top: 0px;
-        }
-    }
-
-    h2{
-        font-size: 50px;
-    }
-
     main{
-        width: 80%;
+        width: 50%;
     }
 
     #menu-header{
+        i{
+            font-size: 70px;
+        }
 
         h2{
-            font-size: 70px;
+            font-size: 45px;
+        }
+    }
+
+    .menu_title {
+        h2{
+            font-size: 28px;
+        }
+    }
+
+    #title-first{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 380px;
+            height: 2px;
+            margin: 0px 78px 4px 0px;
+        }
+    
+        :after{
+            width: 380px;
+            height: 2px;
+            margin: 0px 0px 4px 78px;
+        }
+    }
+
+    #title-second{
+        h2{
+            margin: 0px;
+        }
+
+        :before{
+            width: 380px;
+            height: 2px;
+            margin: 0px 115px 4px 0px;
+        }
+    
+        :after{
+            width: 380px;
+            height: 2px;
+            margin: 0px 0px 4px 115px;
+        }
+    }
+
+    #title-third{
+        h2{
+            margin: 0px;
+        }
+        :before{
+            width: 380px;
+            height: 2px;
+            margin: 0px 95px 4px 0px;
+        }
+
+        :after{
+            width: 380px;
+            height: 2px;
+            margin: 0px 0px 4px 95px;
         }
     }
 
     .menu_elmnt{
         li{
-            font-size: 43px;
-            width: 60%;
+            font-size: 23px;
+            width: 55%;
             padding-left: 21%;
         }
-
-        p{
-            line-height: 90px;
-        }
-    }
-
-    footer{
-        margin-top: 8%;
-        height: 125px;
     }
 
     footer button{
-        font-size: 50px;
+        font-size: 21px;
     }
-
 }
