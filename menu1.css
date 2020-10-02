@@ -81,8 +81,8 @@ main {
   font-family: "short_stackregular";
   margin: 0;
 }
-.menu_title :hover {
-  background-size: 100% 100%;
+.menu_title h2:hover {
+  background-size: 25% 100%;
 }
 
 .menu_elmnt {

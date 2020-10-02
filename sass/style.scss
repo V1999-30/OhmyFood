@@ -110,16 +110,10 @@ header{
 .all_menus a {
     text-decoration: none;
     width: 100%;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-
-.all_menus a :hover{
-    -webkit-transform: scale(1.3);
-    transform: scale(1.1);
-    opacity: 0.6;
+    transition: all 0.8s;
+    &:hover{
+        transform: scale(1.06);
+    }
 }
 
 #menu-1{

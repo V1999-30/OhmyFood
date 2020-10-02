@@ -79,16 +79,10 @@ header a {
 .all_menus a {
   text-decoration: none;
   width: 100%;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  transition: all 0.8s;
 }
-
-.all_menus a :hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.1);
-  opacity: 0.6;
+.all_menus a:hover {
+  transform: scale(1.06);
 }
 
 #menu-1 {

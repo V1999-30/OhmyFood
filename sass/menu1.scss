@@ -72,17 +72,16 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-
     h2{
         @include title-h2-animation;
         font-family: "short_stackregular";
         margin: 0;
-    }
-
-    :hover{
-        background-size: 100% 100%;
+        &:hover{
+            background-size: 25% 100%;
+        }
     }
 }
+
 
 .menu_elmnt{
     margin: 0;
@@ -115,6 +114,7 @@ main{
         width: 200px;
 
     }
+    
 
     :after{
         display: inline-block;
