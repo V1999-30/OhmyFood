@@ -267,6 +267,15 @@ footer {
         h2{
             font-size: 18px;
             padding: 0;
+            @include title-h2-animation;
+            font-family: "short_stackregular";
+            margin: 0;
+            &:hover{
+                -webkit-background-size: 0;
+                -moz-background-size: 0;
+                -ms-background-size: 0;
+                -o-background-size: 0;
+            }
         }
     }
 
@@ -318,6 +327,7 @@ footer {
         li{
             display: initial;
             font-size: 12px;
+            padding-left: 0;
         }
 
         p{
@@ -344,9 +354,17 @@ footer {
             align-items: center;
         }
 
+        #left:hover{
+            animation: inherit;
+        }
+
         #right{
             display: flex;
             align-items: center;
+        }
+
+        #right:hover{
+            animation: inherit;
         }
     }
 }
@@ -364,6 +382,15 @@ footer {
     .menu_title{
         h2{
             font-size: 24px;
+            @include title-h2-animation;
+            font-family: "short_stackregular";
+            margin: 0;
+            &:hover{
+                -webkit-background-size: 0;
+                -moz-background-size: 0;
+                -ms-background-size: 0;
+                -o-background-size: 0;
+            }
         }
     }
 
@@ -421,8 +448,16 @@ footer {
             margin: 24px 20px;
         }
 
+        #left:hover{
+            animation: inherit;
+        }
+
         #right{
             margin: 24px 20px;
+        }
+
+        #right:hover{
+            animation: inherit;
         }
     }
 }

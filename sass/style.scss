@@ -307,6 +307,12 @@ footer {
         margin: 10.5%;
         padding: 125px 0px;
     }
+    .all_menus a {
+        transition: inherit;
+        &:hover{
+            transform: inherit;
+        }
+    }
 
     #menu-1{
         i{
@@ -369,6 +375,13 @@ footer {
 
     footer{
         margin-top: 0;
+        #left:hover{
+            animation: inherit;
+        }
+        
+        #right:hover{
+            animation: inherit;
+        }
     }
 }
 
@@ -395,6 +408,13 @@ footer {
     .all_menus{
         margin-top: 50px;
         padding: 100px 0px;
+    }
+
+    .all_menus a {
+        transition: inherit;
+        &:hover{
+            transform: inherit;
+        }
     }
 
     #menu-1{
@@ -463,10 +483,16 @@ footer {
     footer{
         #left{
             margin: 24px 20px;
+            #left:hover{
+                animation: inherit;
+            }
         }
 
         #right{
             margin: 24px 20px;
+            #right:hover{
+                animation: inherit;
+            }
         }
     }
 }

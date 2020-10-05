@@ -254,6 +254,28 @@ footer #right:hover {
 
   .menu_title h2 {
     font-size: 17px;
+    background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.3s;
+    -webkit-background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+    -webkit-background-size: 0% 100%;
+    -webkit-transition: background-size 0.3s;
+    -moz-background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+    -moz-background-size: 0% 100%;
+    -moz-transition: background-size 0.3s;
+    -ms-background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+    -ms-background-size: 0% 100%;
+    -ms-transition: background-size 0.3s;
+    -o-background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+    -o-background-size: 0% 100%;
+    -o-transition: background-size 0.3s;
+    margin: 0;
+  }
+  .menu_title h2:hover {
+    -webkit-background-size: 0;
+    -moz-background-size: 0;
+    -ms-background-size: 0;
+    -o-background-size: 0;
   }
 
   #title-first h2 {
@@ -319,9 +341,15 @@ footer #right:hover {
     display: flex;
     align-items: center;
   }
+  footer #left:hover {
+    animation: inherit;
+  }
   footer #right {
     display: flex;
     align-items: center;
+  }
+  footer #right:hover {
+    animation: inherit;
   }
 }
 @media all and (min-width: 375px) and (max-width: 424px) {
@@ -523,6 +551,28 @@ footer #right:hover {
 
   .menu_title h2 {
     font-size: 24px;
+    background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.3s;
+    -webkit-background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+    -webkit-background-size: 0% 100%;
+    -webkit-transition: background-size 0.3s;
+    -moz-background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+    -moz-background-size: 0% 100%;
+    -moz-transition: background-size 0.3s;
+    -ms-background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+    -ms-background-size: 0% 100%;
+    -ms-transition: background-size 0.3s;
+    -o-background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+    -o-background-size: 0% 100%;
+    -o-transition: background-size 0.3s;
+    margin: 0;
+  }
+  .menu_title h2:hover {
+    -webkit-background-size: 0;
+    -moz-background-size: 0;
+    -ms-background-size: 0;
+    -o-background-size: 0;
   }
 
   #title-first h2 {
@@ -576,8 +626,14 @@ footer #right:hover {
   footer #left {
     margin: 24px 20px;
   }
+  footer #left:hover {
+    animation: inherit;
+  }
   footer #right {
     margin: 24px 20px;
+  }
+  footer #right:hover {
+    animation: inherit;
   }
 }
 @media all and (min-width: 1024px) and (max-width: 1865px) {

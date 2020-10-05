@@ -64,7 +64,7 @@ main{
     align-items: center;
     h2{
         @include title-h2-animation;
-        font-family: "short_stackregular";
+        font-family: "caveatregular";
         margin: 0;
         &:hover{
             -webkit-background-size: 100% 100%;
@@ -221,6 +221,20 @@ footer {
         }
     }
 
+    .menu_title{
+        h2{
+            margin: 0px;
+            font-size: 20px;
+            @include title-h2-animation;
+            &:hover{
+                -webkit-background-size: 0;
+                -moz-background-size: 0;
+                -ms-background-size: 0;
+                -o-background-size: 0;
+            }
+        }
+    }
+
     #title-first{
         
         h2{
@@ -299,6 +313,13 @@ footer {
 
     footer{
         margin-top: 0;
+        #left:hover{
+            animation: inherit;
+        }
+
+        #right:hover{
+            animation: inherit;
+        }
     }
 }
 
@@ -391,11 +412,22 @@ footer {
         margin-bottom: 50px;
     }
 
-    #title-first{
-        
+    .menu_title{
         h2{
-            font-size: 25px;
+            margin: 0px;
+            font-size: 24px;
+            @include title-h2-animation;
+            font-family: "caveatregular";
+            &:hover{
+                -webkit-background-size: 0;
+                -moz-background-size: 0;
+                -ms-background-size: 0;
+                -o-background-size: 0;
+            }
         }
+    }
+
+    #title-first{
 
         :before{
             width: 200px;
@@ -408,10 +440,6 @@ footer {
     }
 
     #title-second{
-
-        h2{
-            font-size: 25px;
-        }
 
         :before{
             width: 200px;
@@ -426,10 +454,6 @@ footer {
     }
 
     #title-third{
-
-        h2{
-            font-size: 25px;
-        }
 
         :before{
             width: 200px;
@@ -454,9 +478,16 @@ footer {
         #left{
             margin: 24px 20px;
         }
+        #left:hover{
+            animation: inherit;
+        }
 
         #right{
             margin: 24px 20px;
+        }
+
+        #right:hover{
+            animation: inherit;
         }
     }
 }

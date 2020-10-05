@@ -273,6 +273,13 @@ footer #right:hover {
     padding: 125px 0px;
   }
 
+  .all_menus a {
+    transition: inherit;
+  }
+  .all_menus a:hover {
+    transform: inherit;
+  }
+
   #menu-1 i {
     font-size: 45px;
   }
@@ -320,6 +327,12 @@ footer #right:hover {
   footer {
     margin-top: 0;
   }
+  footer #left:hover {
+    animation: inherit;
+  }
+  footer #right:hover {
+    animation: inherit;
+  }
 }
 @media all and (min-width: 375px) and (max-width: 424px) {
   #soon {
@@ -339,6 +352,13 @@ footer #right:hover {
   .all_menus {
     margin-top: 50px;
     padding: 100px 0px;
+  }
+
+  .all_menus a {
+    transition: inherit;
+  }
+  .all_menus a:hover {
+    transform: inherit;
   }
 
   #menu-1 a i {
@@ -386,8 +406,14 @@ footer #right:hover {
   footer #left {
     margin: 24px 20px;
   }
+  footer #left #left:hover {
+    animation: inherit;
+  }
   footer #right {
     margin: 24px 20px;
+  }
+  footer #right #right:hover {
+    animation: inherit;
   }
 }
 @media all and (min-width: 1024px) and (max-width: 1439px) {
