@@ -62,6 +62,17 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    h2{
+        @include title-h2-animation;
+        font-family: "short_stackregular";
+        margin: 0;
+        &:hover{
+            -webkit-background-size: 100% 100%;
+            -moz-background-size: 100% 100%;
+            -ms-background-size: 100% 100%;
+            -o-background-size: 100% 100%;
+        }
+    }
 }
 
 #title-first{
@@ -86,17 +97,6 @@ main{
         text-shadow: none;
         background: linear-gradient(90deg, rgba(124,208,46,1) 49%, rgba(12,82,10,1) 76%);
         width: 300px;
-    }
-
-    h2{
-        @include title-h2-animation;
-        font-family: "caveatregular";
-        font-size: 40px;
-        margin: 0;
-    }
-
-    :hover{
-        background-size: 100% 100%;
     }
 }
 
@@ -123,17 +123,6 @@ main{
         background: linear-gradient(90deg, rgba(124,208,46,1) 49%, rgba(12,82,10,1) 76%);
         width: 300px;
     }
-
-    h2{
-        @include title-h2-animation;
-        font-family: "caveatregular";
-        font-size: 40px;
-        margin: 0;
-    }
-
-    :hover{
-        background-size: 100% 100%;
-    }
 }
 
 #title-third{
@@ -158,17 +147,6 @@ main{
         text-shadow: none;
         background: linear-gradient(90deg, rgba(124,208,46,1) 49%, rgba(12,82,10,1) 76%);
         width: 300px;
-    }
-
-    h2{
-        @include title-h2-animation;
-        font-family: "caveatregular";
-        font-size: 40px;
-        margin: 0;
-    }
-
-    :hover{
-        background-size: 100% 100%;
     }
 }
 
@@ -320,16 +298,7 @@ footer {
     }
 
     footer{
-        margin-top: 18%;
-        #left{
-            display: flex;
-            align-items: center;
-        }
-
-        #right{
-            display: flex;
-            align-items: center;
-        }
+        margin-top: 0;
     }
 }
 
@@ -482,7 +451,13 @@ footer {
     }
 
     footer{
-        font-size: 19px;
+        #left{
+            margin: 24px 20px;
+        }
+
+        #right{
+            margin: 24px 20px;
+        }
     }
 }
 
@@ -569,8 +544,15 @@ footer {
     }
 
     footer{
-        font-size: 20px;
-    }
+        #left{
+            font-size: 20px;
+            margin: 23px 10px;
+        }
+        #right{
+            font-size: 20px;
+            margin: 23px 10px;
+        }
+    } 
 }
 
 @media all and (min-width: 1440px) and (max-width: 1865px)
@@ -640,7 +622,14 @@ footer {
     }
 
     footer{
-        font-size: 21px;
+        #left{
+            font-size: 25px;
+            margin: 20px 10px;
+        }
+        #right{
+            font-size: 25px;
+            margin: 20px 10px;
+        }
     }
 }
 
@@ -742,14 +731,16 @@ footer {
     }
 
     footer{
-        height: 100px;
-
+        margin-top: 2%;
+        height: 75px;
         #left{
-            font-size: 50px;
+            font-size: 35px;
+            margin: 18px 20px;
         }
 
         #right{
-            font-size: 50px;
+            font-size: 35px;
+            margin: 18px 20px;
         }
     }
 

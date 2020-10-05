@@ -64,9 +64,26 @@ main {
   background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
   background-size: 0% 100%;
   transition: background-size 0.3s;
+  -webkit-background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+  -webkit-background-size: 0% 100%;
+  -webkit-transition: background-size 0.3s;
+  -moz-background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+  -moz-background-size: 0% 100%;
+  -moz-transition: background-size 0.3s;
+  -ms-background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+  -ms-background-size: 0% 100%;
+  -ms-transition: background-size 0.3s;
+  -o-background: linear-gradient(to top, black 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+  -o-background-size: 0% 100%;
+  -o-transition: background-size 0.3s;
+  font-family: "short_stackregular";
+  margin: 0;
 }
-.menu_title :hover {
-  background-size: 100% 100%;
+.menu_title h2:hover {
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -ms-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
 }
 
 #title-first h2 {
@@ -170,15 +187,15 @@ main {
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
   height: 70px;
   width: 100%;
   background-color: #579C87;
-  display: flex;
-  justify-content: space-between;
 }
 footer #left {
-  font-size: 22px;
-  padding: 23px;
+  font-size: 19px;
+  margin: auto;
   background-color: #579C87;
   font-family: sans-serif;
   text-decoration: none;
@@ -189,8 +206,8 @@ footer #left:hover {
   animation: shake 0.8s infinite;
 }
 footer #right {
-  font-size: 22px;
-  padding: 23px;
+  font-size: 19px;
+  margin: auto;
   background-color: #579C87;
   font-family: sans-serif;
   text-decoration: none;
@@ -556,11 +573,11 @@ footer #right:hover {
     padding-left: 10%;
   }
 
-  footer {
-    height: 60px;
+  footer #left {
+    margin: 24px 20px;
   }
-  footer button {
-    font-size: 20px;
+  footer #right {
+    margin: 24px 20px;
   }
 }
 @media all and (min-width: 1024px) and (max-width: 1865px) {
@@ -621,8 +638,13 @@ footer #right:hover {
     padding-left: 9%;
   }
 
-  footer button {
+  footer #left {
     font-size: 20px;
+    margin: 23px 10px;
+  }
+  footer #right {
+    font-size: 20px;
+    margin: 23px 10px;
   }
 }
 @media all and (min-width: 1440px) and (max-width: 1865px) {
@@ -685,8 +707,13 @@ footer #right:hover {
     padding-left: 15%;
   }
 
-  footer button {
-    font-size: 21px;
+  footer #left {
+    font-size: 25px;
+    margin: 20px 10px;
+  }
+  footer #right {
+    font-size: 25px;
+    margin: 20px 10px;
   }
 }
 @media all and (min-width: 2560px) {
@@ -753,8 +780,17 @@ footer #right:hover {
     padding-left: 21%;
   }
 
-  footer button {
-    font-size: 21px;
+  footer {
+    margin-top: 2%;
+    height: 75px;
+  }
+  footer #left {
+    font-size: 35px;
+    margin: 18px 20px;
+  }
+  footer #right {
+    font-size: 35px;
+    margin: 18px 20px;
   }
 }
 

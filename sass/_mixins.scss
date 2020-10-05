@@ -21,19 +21,31 @@
     background: linear-gradient(to top, rgb(0, 0, 0) 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
     background-size: 0% 100%;
     transition: background-size .3s;
+    -webkit-background: linear-gradient(to top, rgb(0, 0, 0) 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+    -webkit-background-size: 0% 100%;
+    -webkit-transition: background-size .3s;
+    -moz-background: linear-gradient(to top, rgb(0, 0, 0) 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+    -moz-background-size: 0% 100%;
+    -moz-transition: background-size .3s;
+    -ms-background: linear-gradient(to top, rgb(0, 0, 0) 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+    -ms-background-size: 0% 100%;
+    -ms-transition: background-size .3s;
+    -o-background: linear-gradient(to top, rgb(0, 0, 0) 3%, rgba(0, 0, 0, 0.5) 3px, transparent 1px) no-repeat;
+    -o-background-size: 0% 100%;
+    -o-transition: background-size .3s;
 }
 
 @mixin footer{
+    display: flex;
+    justify-content: space-between;
     height: 70px;
     width: 100%;
     background-color: $color-primary;
-    display: flex;
-    justify-content: space-between;
 }
 
 @mixin footer-button{
-    font-size: 22px;
-    padding: 23px;
+    font-size: 19px;
+    margin: auto;
     background-color: $color-primary;
     font-family: sans-serif;
     text-decoration: none;

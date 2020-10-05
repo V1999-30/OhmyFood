@@ -111,8 +111,16 @@ header{
     text-decoration: none;
     width: 100%;
     transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
     &:hover{
         transform: scale(1.06);
+        -webkit-transform: scale(1.06);
+        -moz-transform: scale(1.06);
+        -ms-transform: scale(1.06);
+        -o-transform: scale(1.06);
     }
 }
 
@@ -216,27 +224,25 @@ header{
     font-size: 30px;
     padding: 12px 25px;
     border-radius: 9px;
-    border: none
-}
-
-.loading {
-    width: 12px;
-    height: 12px;
-    margin: 10px;
-    background-color: #ffd957;
-    border-radius: 50%;
-    display: inline-block;
-    animation-name: dots;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-:nth-child(2){
-    animation-delay: 0.4s;
-}
-
-:nth-child(3){
-    animation-delay: 0.8s;
+    border: none;
+    .loading {
+        width: 12px;
+        height: 12px;
+        margin: 10px;
+        background-color: #ffd957;
+        border-radius: 50%;
+        display: inline-block;
+        animation-name: dots;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    :nth-child(2){
+        animation-delay: 0.4s;
+    }
+    
+    :nth-child(3){
+        animation-delay: 0.8s;
+    }
 }
 
 
@@ -354,20 +360,15 @@ footer {
         margin: 0 0 9% 12%;
         font-size: 18px;
         border-radius: 9px;
+        .loading {
+            width: 8px;
+            height: 8px;
+            margin: 0px 7px;
+        }
     }
-
-    .loading span{
-        width: 8px;
-        height: 8px;
-    }
-
 
     footer{
         margin-top: 0;
-
-        button{
-            font-size: 17px;
-        }
     }
 }
 
@@ -452,11 +453,21 @@ footer {
         margin-left: 33%;
         margin-bottom: 6%;
         font-size: 20px;
+        .loading{
+            width: 9px;
+            height: 9px;
+            margin: 2px 10px;
+        }
     }
 
-    .loading span{
-        width: 9px;
-        height: 9px;
+    footer{
+        #left{
+            margin: 24px 20px;
+        }
+
+        #right{
+            margin: 24px 20px;
+        }
     }
 }
 
@@ -521,12 +532,22 @@ footer {
     #soon{
         margin: 0 0 5% 36%;
         font-size: 22px;
+        .loading {
+            width: 10px;
+            height: 10px;
+        }
     }
 
-    .loading span {
-        width: 10px;
-        height: 10px;
-    }
+    footer{
+        #left{
+            font-size: 20px;
+            margin: 23px 10px;
+        }
+        #right{
+            font-size: 20px;
+            margin: 23px 10px;
+        }
+    } 
 }
 
 @media all and (min-width: 1440px) and (max-width: 2559px)
@@ -549,10 +570,20 @@ footer {
 
     #soon{
         margin: 0 0 5% 38%;
+        .loading {
+            margin: 10px 9px;
+        }
     }
 
-    footer button{
-        font-size: 25px;
+    footer{
+        #left{
+            font-size: 25px;
+            margin: 20px 10px;
+        }
+        #right{
+            font-size: 25px;
+            margin: 20px 10px;
+        }
     }
 }
 
@@ -630,15 +661,24 @@ footer {
         font-size: 55px;
         border-radius: 18px;
         padding: 22px 41px;
+        .loading{
+            width: 25px;
+            height: 25px;
+            margin: 22px 14px;
+        }
     }
 
     footer{
         margin-top: 2%;
-        height: 125px;
-    }
+        height: 75px;
+        #left{
+            font-size: 35px;
+            margin: 18px 20px;
+        }
 
-    footer button{
-        font-size: 50px;
+        #right{
+            font-size: 35px;
+            margin: 18px 20px;
+        }
     }
-
 }

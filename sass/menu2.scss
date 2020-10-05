@@ -55,13 +55,16 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-
     h2{
         @include title-h2-animation;
-    }
-
-    :hover{
-        background-size: 100% 100%;
+        font-family: "short_stackregular";
+        margin: 0;
+        &:hover{
+            -webkit-background-size: 100% 100%;
+            -moz-background-size: 100% 100%;
+            -ms-background-size: 100% 100%;
+            -o-background-size: 100% 100%;
+        }
     }
 }
 
@@ -647,12 +650,14 @@ footer {
     }
 
     footer{
-        height: 60px;
-
-        button{
-            font-size: 20px;
+        #left{
+            margin: 24px 20px;
         }
-    } 
+
+        #right{
+            margin: 24px 20px;
+        }
+    }
 }
 
 @media all and (min-width: 1024px) and (max-width: 1865px)
@@ -729,9 +734,16 @@ footer {
         }
     }
 
-    footer button{
-        font-size: 20px;
-    }
+    footer{
+        #left{
+            font-size: 20px;
+            margin: 23px 10px;
+        }
+        #right{
+            font-size: 20px;
+            margin: 23px 10px;
+        }
+    } 
 }
 
 @media all and (min-width: 1440px) and (max-width: 1865px)
@@ -813,8 +825,15 @@ footer {
         }
     }
 
-    footer button{
-        font-size: 21px;
+    footer{
+        #left{
+            font-size: 25px;
+            margin: 20px 10px;
+        }
+        #right{
+            font-size: 25px;
+            margin: 20px 10px;
+        }
     }
 }
 
@@ -901,7 +920,17 @@ footer {
         }
     }
 
-    footer button{
-        font-size: 21px;
+    footer{
+        margin-top: 2%;
+        height: 75px;
+        #left{
+            font-size: 35px;
+            margin: 18px 20px;
+        }
+
+        #right{
+            font-size: 35px;
+            margin: 18px 20px;
+        }
     }
 }

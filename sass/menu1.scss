@@ -77,7 +77,10 @@ main{
         font-family: "short_stackregular";
         margin: 0;
         &:hover{
-            background-size: 25% 100%;
+            -webkit-background-size: 100% 100%;
+            -moz-background-size: 100% 100%;
+            -ms-background-size: 100% 100%;
+            -o-background-size: 100% 100%;
         }
     }
 }
@@ -412,6 +415,16 @@ footer {
             padding-left: 10%;
         }
     }
+
+    footer{
+        #left{
+            margin: 24px 20px;
+        }
+
+        #right{
+            margin: 24px 20px;
+        }
+    }
 }
 
 @media all and (min-width: 1024px) and (max-width: 1865px)
@@ -474,8 +487,15 @@ footer {
         }
     }
 
-    footer button{
-        font-size: 22px;
+    footer{
+        #left{
+            font-size: 20px;
+            margin: 23px 10px;
+        }
+        #right{
+            font-size: 20px;
+            margin: 23px 10px;
+        }
     }
 }
 
@@ -541,7 +561,7 @@ footer {
         }
     }
 
-    footer button{
+    footer{
         font-size: 21px;
     }
 }
@@ -635,20 +655,15 @@ footer {
 
     footer{
         margin-top: 2%;
-        height: 125px;
-
+        height: 75px;
         #left{
-            display: flex;
-            align-items: center;
-            font-size: 50px;
-            padding: 0px 20px;
+            font-size: 35px;
+            margin: 18px 20px;
         }
 
         #right{
-            display: flex;
-            align-items: center;
-            font-size: 50px;
-            padding: 0px 50px;
+            font-size: 35px;
+            margin: 18px 20px;
         }
     }
 }
