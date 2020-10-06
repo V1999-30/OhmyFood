@@ -70,31 +70,31 @@ main{
 
 #title-first{
     h2{
-        color: $color-menu2;
+        color: #e38a12;
     }
+}
 
-    :before{
-        display: inline-block;
-        justify-content: space-between;
-        margin: 0 20px 2px 0;
-        height: 4px;
-        content: " ";
-        text-shadow: none;
-        background-color: #e38a12;
-        width: 250px;
+#title-first:before{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 0 20px 0px 0;
+    height: 4px;
+    content: " ";
+    text-shadow: none;
+    background-color: #e38a12;
+    width: 250px;
 
-    }
+}
 
-    :after{
-        display: inline-block;
-        justify-content: space-between;
-        margin: 0 0 2px 20px;
-        height: 4px;
-        content: " ";
-        text-shadow: none;
-        background-color: #e38a12;
-        width: 250px;
-    }
+#title-first:after{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 0 0 0px 20px;
+    height: 4px;
+    content: " ";
+    text-shadow: none;
+    background-color: #e38a12;
+    width: 250px;
 }
 
 #elmnt-first{
@@ -123,30 +123,28 @@ main{
     h2 {
         color: #98499e;
     }
+}
 
-    :before{
-        display: inline-block;
-        justify-content: space-between;
-        margin: 0 51px 2px 0;
-        height: 4px;
-        content: " ";
-        text-shadow: none;
-        background-color: #98499e;
-        width: 250px;
+#title-second:before{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 0 51px 0px 0;
+    height: 4px;
+    content: " ";
+    text-shadow: none;
+    background-color: #98499e;
+    width: 250px;
+}
 
-    }
-
-    :after{
-        display: inline-block;
-        justify-content: space-between;
-        margin: 0 0 2px 60px;
-        height: 4px;
-        content: " ";
-        text-shadow: none;
-        background-color: #98499e;
-        width: 250px;
-    }
-
+#title-second:after{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 0 0 0px 60px;
+    height: 4px;
+    content: " ";
+    text-shadow: none;
+    background-color: #98499e;
+    width: 250px;
 }
 
 #elmnt-second{
@@ -157,29 +155,28 @@ main{
     h2 {
         color: $color2-menu2;
     }
+}
 
-    :before{
-        display: inline-block;
-        justify-content: space-between;
-        margin: 0 35px 2px 0;
-        height: 4px;
-        content: " ";
-        text-shadow: none;
-        background-color: #651cff;
-        width: 250px;
+#title-third:before{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 0 35px 0px 0;
+    height: 4px;
+    content: " ";
+    text-shadow: none;
+    background-color: #651cff;
+    width: 250px;
+}
 
-    }
-
-    :after{
-        display: inline-block;
-        justify-content: space-between;
-        margin: 0 0 2px 35px;
-        height: 4px;
-        content: " ";
-        text-shadow: none;
-        background-color: #651cff;
-        width: 250px;
-    }
+#title-third:after{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 0 0 0px 35px;
+    height: 4px;
+    content: " ";
+    text-shadow: none;
+    background-color: #651cff;
+    width: 250px;
 }
 
 #elmnt-third{
@@ -261,53 +258,53 @@ footer {
         h2{
             margin: 0px;
         }
+    }
 
-        :before{
-            width: 45px;
-            height: 2px;
-            margin: 0px 2px 4px 0px;
-        }
+    #title-first:before{
+        width: 45px;
+        height: 2px;
+        margin: 0px 2px 0px 0px;
+    }
     
-        :after{
-            width: 45px;
-            height: 2px;
-            margin: 0px 0px 4px 2px;
-        }
+    #title-first:after{
+        width: 45px;
+        height: 2px;
+        margin: 0px 0px 0px 2px;
     }
 
     #title-second{
         h2{
             margin: 0px;
         }
+    }
 
-        :before{
-            width: 45px;
-            height: 2px;
-            margin: 0px 25px 4px 0px;
-        }
+    #title-second:before{
+        width: 45px;
+        height: 2px;
+        margin: 0px 25px 0px 0px;
+    }
     
-        :after{
-            width: 45px;
-            height: 2px;
-            margin: 0px 0px 4px 25px;
-        }
+    #title-second:after{
+        width: 45px;
+        height: 2px;
+        margin: 0px 0px 0px 25px;
     }
 
     #title-third{
         h2{
             margin: 0px;
         }
-        :before{
-            width: 45px;
-            height: 2px;
-            margin: 0px 10px 4px 0px;
-        }
+    }
+    #title-third:before{
+        width: 45px;
+        height: 2px;
+        margin: 0px 10px 0px 0px;
+    }
 
-        :after{
-            width: 45px;
-            height: 2px;
-            margin: 0px 0px 4px 10px;
-        }
+    #title-third:after{
+        width: 45px;
+        height: 2px;
+        margin: 0px 0px 0px 10px;
     }
 
     .menu_elmnt{
@@ -331,6 +328,7 @@ footer {
         #left{
             display: flex;
             align-items: center;
+            margin: auto;
         }
 
         #left:hover{
@@ -340,6 +338,7 @@ footer {
         #right{
             display: flex;
             align-items: center;
+            margin: auto;
         }
 
         #right:hover{
@@ -381,54 +380,54 @@ footer {
         h2{
             margin: 0px;
         }
+    }
 
-        :before{
-            width: 65px;
-            height: 2px;
-            margin: 0px 3px 4px 0px;
-        }
+    #title-first:before{
+        width: 65px;
+        height: 2px;
+        margin: 0px 3px 0px 0px;
+    }
 
-        :after{
-            width: 65px;
-            height: 2px;
-            margin: 0px 0px 4px 3px;
-        }
+    #title-first:after{
+        width: 65px;
+        height: 2px;
+        margin: 0px 0px 0px 3px;
     }
 
     #title-second{
         h2{
             margin: 0px;
         }
+    }
 
-        :before{
-            width: 65px;
-            height: 2px;
-            margin: 0px 28px 4px 0px;
-        }
+    #title-second:before{
+        width: 65px;
+        height: 2px;
+        margin: 0px 28px 0px 0px;
+    }
 
-        :after{
-            width: 65px;
-            height: 2px;
-            margin: 0px 0px 4px 28px;
-        }
+    #title-second:after{
+        width: 65px;
+        height: 2px;
+        margin: 0px 0px 0px 28px;
     }
 
     #title-third{
         h2{
             margin: 0px;
         }
+    }
 
-        :before{
-            width: 65px;
-            height: 2px;
-            margin: 0px 14px 4px 0px;
-        }
+    #title-third:before{
+        width: 65px;
+        height: 2px;
+        margin: 0px 14px 4px 0px;
+    }
 
-        :after{
-            width: 65px;
-            height: 2px;
-            margin: 0px 0px 4px 14px;
-        }
+    #title-third:after{
+        width: 65px;
+        height: 2px;
+        margin: 0px 0px 4px 14px;
     }
 
     .menu_elmnt{
@@ -487,71 +486,62 @@ footer {
     .menu_title{
         h2{
             font-size: 17px;
-        }
-    }
-
-    .menu_title{
-
-        h2{
             margin: 0px;
         }
     }
 
     #title-first{
-
         h2{
             margin: 0px;
         }
+    }
 
-        :before{
-            width: 75px;
-            height: 2px;
-            margin: 0px 17px 4px 0px;
-        }
+    #title-first:before{
+        width: 75px;
+        height: 2px;
+        margin: 0px 17px 0px 0px;
+    }
 
-        :after{
-            width: 75px;
-            height: 2px;
-            margin: 0px 0px 4px 17px;
-        }
+    #title-first:after{
+        width: 75px;
+        height: 2px;
+        margin: 0px 0px 0px 17px;
     }
 
     #title-second{
-
         h2{
             margin: 0px;
-        }
-
-        :before{
-            width: 75px;
-            height: 2px;
-            margin: 0px 40px 4px 0px;
-        }
-
-        :after{
-            width: 75px;
-            height: 2px;
-            margin: 0px 0px 4px 40px;
         }
     }
 
-    #title-third{
+    #title-second:before{
+        width: 75px;
+        height: 2px;
+        margin: 0px 40px 0px 0px;
+    }
 
+    #title-second:after{
+        width: 75px;
+        height: 2px;
+        margin: 0px 0px 0px 40px;
+    }
+
+    #title-third{
         h2{
             margin: 0px;
         }
+    }
 
-        :before{
-            width: 75px;
-            height: 2px;
-            margin: 0px 25px 4px 0px;
-        }
+    #title-third:before{
+        width: 75px;
+        height: 2px;
+        margin: 0px 25px 0px 0px;
+    }
 
-        :after{
-            width: 75px;
-            height: 2px;
-            margin: 0px 0px 4px 25px;
-        }
+    #title-third:after{
+        width: 75px;
+        height: 2px;
+        margin: 0px 0px 0px 25px;
     }
 
 
@@ -616,53 +606,54 @@ footer {
         h2{
             margin: 0px;
         }
+    }
 
-        :before{
-            width: 175px;
-            height: 2px;
-            margin: 0px 20px 4px 0px;
-        }
+    #title-first:before{
+        width: 175px;
+        height: 2px;
+        margin: 0px 20px 0px 0px;
+    }
     
-        :after{
-            width: 175px;
-            height: 2px;
-            margin: 0px 0px 4px 20px;
-        }
+    #title-first:after{
+        width: 175px;
+        height: 2px;
+        margin: 0px 0px 0px 20px;
     }
 
     #title-second{
         h2{
             margin: 0px;
         }
+    }
 
-        :before{
-            width: 175px;
-            height: 2px;
-            margin: 0px 53px 4px 0px;
-        }
+    #title-second:before{
+        width: 175px;
+        height: 2px;
+        margin: 0px 53px 0px 0px;
+    }
     
-        :after{
-            width: 175px;
-            height: 2px;
-            margin: 0px 0px 4px 50px;
-        }
+    #title-second:after{
+        width: 175px;
+        height: 2px;
+        margin: 0px 0px 0px 50px;
     }
 
     #title-third{
         h2{
             margin: 0px;
         }
-        :before{
-            width: 175px;
-            height: 2px;
-            margin: 0px 35px 4px 0px;
-        }
+    }
 
-        :after{
-            width: 175px;
-            height: 2px;
-            margin: 0px 0px 4px 35px;
-        }
+    #title-third:before{
+        width: 175px;
+        height: 2px;
+        margin: 0px 35px 0px 0px;
+    }
+
+    #title-third:after{
+        width: 175px;
+        height: 2px;
+        margin: 0px 0px 0px 35px;
     }
 
     .menu_elmnt{
@@ -709,53 +700,54 @@ footer {
         h2{
             margin: 0px;
         }
+    }
 
-        :before{
-            width: 160px;
-            height: 2px;
-            margin: 0px 35px 4px 0px;
-        }
+    #title-first:before{
+        width: 160px;
+        height: 2px;
+        margin: 0px 35px 0px 0px;
+    }
     
-        :after{
-            width: 160px;
-            height: 2px;
-            margin: 0px 0px 4px 35px;
-        }
+    #title-first:after{
+        width: 160px;
+        height: 2px;
+        margin: 0px 0px 0px 35px;
     }
 
     #title-second{
         h2{
             margin: 0px;
         }
+    }
 
-        :before{
-            width: 160px;
-            height: 2px;
-            margin: 0px 68px 4px 0px;
-        }
+    #title-second:before{
+        width: 160px;
+        height: 2px;
+        margin: 0px 68px 0px 0px;
+    }
     
-        :after{
-            width: 160px;
-            height: 2px;
-            margin: 0px 0px 4px 65px;
-        }
+    #title-second:after{
+        width: 160px;
+        height: 2px;
+        margin: 0px 0px 0px 65px;
     }
 
     #title-third{
         h2{
             margin: 0px;
         }
-        :before{
-            width: 160px;
-            height: 2px;
-            margin: 0px 50px 4px 0px;
-        }
+    }
 
-        :after{
-            width: 160px;
-            height: 2px;
-            margin: 0px 0px 4px 50px;
-        }
+    #title-third:before{
+        width: 160px;
+        height: 2px;
+        margin: 0px 50px 0px 0px;
+    }
+
+    #title-third:after{
+        width: 160px;
+        height: 2px;
+        margin: 0px 0px 0px 50px;
     }
 
     .menu_elmnt{
@@ -800,53 +792,54 @@ footer {
         h2{
             margin: 0px;
         }
+    }
 
-        :before{
-            width: 220px;
-            height: 2px;
-            margin: 0px 78px 4px 0px;
-        }
+    #title-first:before{
+        width: 220px;
+        height: 2px;
+        margin: 0px 78px 0px 0px;
+    }
     
-        :after{
-            width: 220px;
-            height: 2px;
-            margin: 0px 0px 4px 78px;
-        }
+    #title-first:after{
+        width: 220px;
+        height: 2px;
+        margin: 0px 0px 0px 78px;
     }
 
     #title-second{
         h2{
             margin: 0px;
         }
+    }
 
-        :before{
-            width: 220px;
-            height: 2px;
-            margin: 0px 115px 4px 0px;
-        }
+    #title-second:before{
+        width: 220px;
+        height: 2px;
+        margin: 0px 115px 0px 0px;
+    }
     
-        :after{
-            width: 220px;
-            height: 2px;
-            margin: 0px 0px 4px 115px;
-        }
+    #title-second:after{
+        width: 220px;
+        height: 2px;
+        margin: 0px 0px 0px 115px;
     }
 
     #title-third{
         h2{
             margin: 0px;
         }
-        :before{
-            width: 220px;
-            height: 2px;
-            margin: 0px 95px 4px 0px;
-        }
+    }
 
-        :after{
-            width: 220px;
-            height: 2px;
-            margin: 0px 0px 4px 95px;
-        }
+    #title-third:before{
+        width: 220px;
+        height: 2px;
+        margin: 0px 95px 0px 0px;
+    }
+
+    #title-third:after{
+        width: 220px;
+        height: 2px;
+        margin: 0px 0px 0px 95px;
     }
 
     .menu_elmnt{
@@ -895,53 +888,54 @@ footer {
         h2{
             margin: 0px;
         }
+    }
 
-        :before{
-            width: 380px;
-            height: 2px;
-            margin: 0px 78px 4px 0px;
-        }
+    #title-first:before{
+        width: 380px;
+        height: 2px;
+        margin: 0px 78px 0px 0px;
+    }
     
-        :after{
-            width: 380px;
-            height: 2px;
-            margin: 0px 0px 4px 78px;
-        }
+    #title-first:after{
+        width: 380px;
+        height: 2px;
+        margin: 0px 0px 0px 78px;
     }
 
     #title-second{
         h2{
             margin: 0px;
         }
+    }
 
-        :before{
-            width: 380px;
-            height: 2px;
-            margin: 0px 115px 4px 0px;
-        }
+    #title-second:before{
+        width: 380px;
+        height: 2px;
+        margin: 0px 115px 0px 0px;
+    }
     
-        :after{
-            width: 380px;
-            height: 2px;
-            margin: 0px 0px 4px 115px;
-        }
+    #title-second:after{
+        width: 380px;
+        height: 2px;
+        margin: 0px 0px 0px 115px;
     }
 
     #title-third{
         h2{
             margin: 0px;
         }
-        :before{
-            width: 380px;
-            height: 2px;
-            margin: 0px 95px 4px 0px;
-        }
+    }
+    
+    #title-third:before{
+        width: 380px;
+        height: 2px;
+        margin: 0px 95px 0px 0px;
+    }
 
-        :after{
-            width: 380px;
-            height: 2px;
-            margin: 0px 0px 4px 95px;
-        }
+    #title-third:after{
+        width: 380px;
+        height: 2px;
+        margin: 0px 0px 0px 95px;
     }
 
     .menu_elmnt{

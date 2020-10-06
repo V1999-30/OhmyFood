@@ -109,20 +109,10 @@ main {
   font-family: "caveatregular";
 }
 
-#title-first :before {
+#title-first:before {
   display: inline-block;
   justify-content: space-between;
-  margin: 0 20px 2px 0;
-  height: 4px;
-  content: " ";
-  text-shadow: none;
-  background-color: #001585;
-  width: 290px;
-}
-#title-first :after {
-  display: inline-block;
-  justify-content: space-between;
-  margin: 0 0 2px 20px;
+  margin: 0 20px 0px 0px;
   height: 4px;
   content: " ";
   text-shadow: none;
@@ -130,20 +120,21 @@ main {
   width: 290px;
 }
 
-#title-second :before {
+#title-first:after {
   display: inline-block;
   justify-content: space-between;
-  margin: 0 28px 2px 0;
+  margin: 0 0 0px 20px;
   height: 4px;
   content: " ";
   text-shadow: none;
-  background-color: #086cb8;
+  background-color: #001585;
   width: 290px;
 }
-#title-second :after {
+
+#title-second:before {
   display: inline-block;
   justify-content: space-between;
-  margin: 0 0 2px 39px;
+  margin: 0 28px 0px 0;
   height: 4px;
   content: " ";
   text-shadow: none;
@@ -151,20 +142,32 @@ main {
   width: 290px;
 }
 
-#title-third :before {
+#title-second:after {
   display: inline-block;
   justify-content: space-between;
-  margin: 0 36px 2px 0;
+  margin: 0 0 0px 39px;
+  height: 4px;
+  content: " ";
+  text-shadow: none;
+  background-color: #086cb8;
+  width: 290px;
+}
+
+#title-third:before {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 36px 0px 0;
   height: 4px;
   content: " ";
   text-shadow: none;
   background-color: #84caff;
   width: 290px;
 }
-#title-third :after {
+
+#title-third:after {
   display: inline-block;
   justify-content: space-between;
-  margin: 0 0 2px 36px;
+  margin: 0 0 0px 36px;
   height: 4px;
   content: " ";
   text-shadow: none;
@@ -181,7 +184,7 @@ footer {
 }
 footer #left {
   font-size: 19px;
-  margin: auto;
+  margin: 23px 15px;
   background-color: #579C87;
   font-family: sans-serif;
   text-decoration: none;
@@ -193,7 +196,7 @@ footer #left:hover {
 }
 footer #right {
   font-size: 19px;
-  margin: auto;
+  margin: 23px 15px;
   background-color: #579C87;
   font-family: sans-serif;
   text-decoration: none;
@@ -261,37 +264,40 @@ footer #right:hover {
     -o-background-size: 0;
   }
 
-  #title-first :before {
+  #title-first:before {
     width: 60px;
     height: 2px;
-    margin: 0px 10px 4px 0px;
-  }
-  #title-first :after {
-    width: 60px;
-    height: 2px;
-    margin: 0px 0px 4px 10px;
+    margin: 0px 10px 0px 0px;
   }
 
-  #title-second :before {
+  #title-first:after {
     width: 60px;
     height: 2px;
-    margin: 0px 10px 4px 0px;
-  }
-  #title-second :after {
-    width: 60px;
-    height: 2px;
-    margin: 0px 0px 4px 10px;
+    margin: 0px 0px 0px 10px;
   }
 
-  #title-third :before {
+  #title-second:before {
     width: 60px;
     height: 2px;
-    margin: 0px 10px 4px 0px;
+    margin: 0px 10px 0px 0px;
   }
-  #title-third :after {
+
+  #title-second:after {
     width: 60px;
     height: 2px;
-    margin: 0px 0px 4px 10px;
+    margin: 0px 0px 0px 10px;
+  }
+
+  #title-third:before {
+    width: 60px;
+    height: 2px;
+    margin: 0px 10px 0px 0px;
+  }
+
+  #title-third:after {
+    width: 60px;
+    height: 2px;
+    margin: 0px 0px 0px 10px;
   }
 
   .menu_elmnt {
@@ -310,54 +316,66 @@ footer #right:hover {
   footer {
     margin-top: 0;
   }
+  footer #left {
+    margin: auto;
+  }
   footer #left:hover {
     animation: inherit;
+  }
+  footer #right {
+    margin: auto;
   }
   footer #right:hover {
     animation: inherit;
   }
 }
 @media all and (min-width: 375px) and (max-width: 424px) {
-  #title-first :before {
-    width: 80px;
-  }
-  #title-first :after {
+  #title-first:before {
     width: 80px;
   }
 
-  #title-second :before {
-    width: 80px;
-  }
-  #title-second :after {
+  #title-first:after {
     width: 80px;
   }
 
-  #title-third :before {
+  #title-second:before {
     width: 80px;
   }
-  #title-third :after {
+
+  #title-second:after {
+    width: 80px;
+  }
+
+  #title-third:before {
+    width: 80px;
+  }
+
+  #title-third:after {
     width: 80px;
   }
 }
 @media all and (min-width: 425px) and (max-width: 767px) {
-  #title-first :before {
-    width: 100px;
-  }
-  #title-first :after {
+  #title-first:before {
     width: 100px;
   }
 
-  #title-second :before {
-    width: 100px;
-  }
-  #title-second :after {
+  #title-first:after {
     width: 100px;
   }
 
-  #title-third :before {
+  #title-second:before {
     width: 100px;
   }
-  #title-third :after {
+
+  #title-second:after {
+    width: 100px;
+  }
+
+  #title-third:before {
+    width: 100px;
+  }
+
+  #title-third:after {
     width: 100px;
   }
 }
@@ -400,43 +418,49 @@ footer #right:hover {
   #title-first h2 {
     margin: 0px;
   }
-  #title-first :before {
-    width: 125px;
+
+  #title-first:before {
+    width: 175px;
     height: 2px;
-    margin: 0px 15px 4px 0px;
+    margin: 0px 15px 0px 0px;
   }
-  #title-first :after {
-    width: 125px;
+
+  #title-first:after {
+    width: 175px;
     height: 2px;
-    margin: 0px 0px 4px 15px;
+    margin: 0px 0px 0px 15px;
   }
 
   #title-second h2 {
     margin: 0px;
   }
-  #title-second :before {
-    width: 125px;
+
+  #title-second:before {
+    width: 175px;
     height: 2px;
-    margin: 0px 22px 4px 0px;
+    margin: 0px 22px 0px 0px;
   }
-  #title-second :after {
-    width: 125px;
+
+  #title-second:after {
+    width: 175px;
     height: 2px;
-    margin: 0px 0px 4px 22px;
+    margin: 0px 0px 0px 22px;
   }
 
   #title-third h2 {
     margin: 0px;
   }
-  #title-third :before {
-    width: 125px;
+
+  #title-third:before {
+    width: 175px;
     height: 2px;
-    margin: 0px 32px 4px 0px;
+    margin: 0px 32px 0px 0px;
   }
-  #title-third :after {
-    width: 125px;
+
+  #title-third:after {
+    width: 175px;
     height: 2px;
-    margin: 0px 0px 4px 32px;
+    margin: 0px 0px 0px 32px;
   }
 
   .menu_elmnt li {
@@ -470,43 +494,49 @@ footer #right:hover {
   #title-first h2 {
     margin: 0px;
   }
-  #title-first :before {
-    width: 175px;
-    height: 3px;
-    margin: 0px 25px 4px 0px;
+
+  #title-first:before {
+    width: 200px;
+    height: 2px;
+    margin: 0px 25px 0px 0px;
   }
-  #title-first :after {
-    width: 175px;
-    height: 3px;
-    margin: 0px 0px 4px 25px;
+
+  #title-first:after {
+    width: 200px;
+    height: 2px;
+    margin: 0px 0px 0px 25px;
   }
 
   #title-second h2 {
     margin: 0px;
   }
-  #title-second :before {
-    width: 175px;
-    height: 3px;
-    margin: 0px 32px 4px 0px;
+
+  #title-second:before {
+    width: 200px;
+    height: 2px;
+    margin: 0px 32px 0px 0px;
   }
-  #title-second :after {
-    width: 175px;
-    height: 3px;
-    margin: 0px 0px 4px 32px;
+
+  #title-second:after {
+    width: 200px;
+    height: 2px;
+    margin: 0px 0px 0px 32px;
   }
 
   #title-third h2 {
     margin: 0px;
   }
-  #title-third :before {
-    width: 175px;
-    height: 3px;
-    margin: 0px 42px 4px 0px;
+
+  #title-third:before {
+    width: 200px;
+    height: 2px;
+    margin: 0px 42px 0px 0px;
   }
-  #title-third :after {
-    width: 175px;
-    height: 3px;
-    margin: 0px 0px 4px 42px;
+
+  #title-third:after {
+    width: 200px;
+    height: 2px;
+    margin: 0px 0px 0px 42px;
   }
 
   .menu_elmnt li {
@@ -539,43 +569,49 @@ footer #right:hover {
   #title-first h2 {
     margin: 0px;
   }
-  #title-first :before {
+
+  #title-first:before {
     width: 250px;
-    height: 3px;
-    margin: 0px 78px 4px 0px;
+    height: 2px;
+    margin: 0px 78px 0px 0px;
   }
-  #title-first :after {
+
+  #title-first:after {
     width: 250px;
-    height: 3px;
-    margin: 0px 0px 4px 78px;
+    height: 2px;
+    margin: 0px 0px 0px 78px;
   }
 
   #title-second h2 {
     margin: 0px;
   }
-  #title-second :before {
-    width: 250px;
-    height: 3px;
-    margin: 0px 85px 4px 0px;
-  }
-  #title-second :after {
+
+  #title-second:before {
     width: 250px;
     height: 2px;
-    margin: 0px 0px 4px 85px;
+    margin: 0px 85px 0px 0px;
+  }
+
+  #title-second:after {
+    width: 250px;
+    height: 2px;
+    margin: 0px 0px 0px 85px;
   }
 
   #title-third h2 {
     margin: 0px;
   }
-  #title-third :before {
+
+  #title-third:before {
     width: 250px;
     height: 2px;
-    margin: 0px 95px 4px 0px;
+    margin: 0px 95px 0px 0px;
   }
-  #title-third :after {
+
+  #title-third:after {
     width: 250px;
     height: 2px;
-    margin: 0px 0px 4px 95px;
+    margin: 0px 0px 0px 95px;
   }
 
   .menu_elmnt li {
@@ -625,43 +661,49 @@ footer #right:hover {
   #title-first h2 {
     margin: 0px;
   }
-  #title-first :before {
+
+  #title-first:before {
     width: 500px;
     height: 3px;
-    margin: 0px 78px 4px 0px;
+    margin: 0px 78px 0px 0px;
   }
-  #title-first :after {
+
+  #title-first:after {
     width: 500px;
     height: 3px;
-    margin: 0px 0px 4px 78px;
+    margin: 0px 0px 0px 78px;
   }
 
   #title-second h2 {
     margin: 0px;
   }
-  #title-second :before {
+
+  #title-second:before {
     width: 500px;
     height: 3px;
-    margin: 0px 115px 4px 0px;
+    margin: 0px 115px 0px 0px;
   }
-  #title-second :after {
+
+  #title-second:after {
     width: 500px;
     height: 2px;
-    margin: 0px 0px 4px 115px;
+    margin: 0px 0px 0px 115px;
   }
 
   #title-third h2 {
     margin: 0px;
   }
-  #title-third :before {
+
+  #title-third:before {
     width: 500px;
     height: 2px;
-    margin: 0px 95px 4px 0px;
+    margin: 0px 95px 0px 0px;
   }
-  #title-third :after {
+
+  #title-third:after {
     width: 500px;
     height: 2px;
-    margin: 0px 0px 4px 95px;
+    margin: 0px 0px 0px 95px;
   }
 
   .menu_elmnt li {

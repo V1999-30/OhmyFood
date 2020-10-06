@@ -90,7 +90,7 @@ main {
   -o-background-size: 100% 100%;
 }
 
-#title-first :before {
+#title-first:before {
   display: inline-block;
   justify-content: space-between;
   margin: 0 75px 2px 0;
@@ -100,7 +100,8 @@ main {
   background: linear-gradient(90deg, #0c520a 27%, #7cd02e 76%);
   width: 300px;
 }
-#title-first :after {
+
+#title-first:after {
   display: inline-block;
   justify-content: space-between;
   margin: 0 0 2px 70px;
@@ -111,7 +112,7 @@ main {
   width: 300px;
 }
 
-#title-second :before {
+#title-second:before {
   display: inline-block;
   justify-content: space-between;
   margin: 0 20px 2px 0;
@@ -121,7 +122,8 @@ main {
   background: linear-gradient(90deg, #0c520a 27%, #7cd02e 76%);
   width: 300px;
 }
-#title-second :after {
+
+#title-second:after {
   display: inline-block;
   justify-content: space-between;
   margin: 0 0 2px 20px;
@@ -132,7 +134,7 @@ main {
   width: 300px;
 }
 
-#title-third :before {
+#title-third:before {
   display: inline-block;
   justify-content: space-between;
   margin: 0 5px 2px 0;
@@ -142,7 +144,8 @@ main {
   background: linear-gradient(90deg, #0c520a 27%, #7cd02e 76%);
   width: 300px;
 }
-#title-third :after {
+
+#title-third:after {
   display: inline-block;
   justify-content: space-between;
   margin: 0 0 2px 7px;
@@ -179,7 +182,7 @@ footer {
 }
 footer #left {
   font-size: 19px;
-  margin: auto;
+  margin: 23px 15px;
   background-color: #579C87;
   font-family: sans-serif;
   text-decoration: none;
@@ -191,7 +194,7 @@ footer #left:hover {
 }
 footer #right {
   font-size: 19px;
-  margin: auto;
+  margin: 23px 15px;
   background-color: #579C87;
   font-family: sans-serif;
   text-decoration: none;
@@ -261,13 +264,15 @@ footer #right:hover {
   #title-first h2 {
     font-size: 25px;
   }
-  #title-first :before {
-    margin: 0 50px 2px 0;
+
+  #title-first:before {
+    margin: 0 50px 0px 0;
     height: 3px;
     width: 50px;
   }
-  #title-first :after {
-    margin: 0 0 2px 50px;
+
+  #title-first:after {
+    margin: 0 0 0px 50px;
     height: 3px;
     width: 50px;
   }
@@ -275,13 +280,15 @@ footer #right:hover {
   #title-second h2 {
     font-size: 25px;
   }
-  #title-second :before {
-    margin: 0 15px 2px 0;
+
+  #title-second:before {
+    margin: 0 15px 0px 0;
     height: 3px;
     width: 50px;
   }
-  #title-second :after {
-    margin: 0 0 2px 15px;
+
+  #title-second:after {
+    margin: 0 0 0px 15px;
     height: 3px;
     width: 50px;
   }
@@ -289,13 +296,15 @@ footer #right:hover {
   #title-third h2 {
     font-size: 25px;
   }
-  #title-third :before {
-    margin: 0 9px 2px 0;
+
+  #title-third:before {
+    margin: 0 9px 0px 0;
     height: 3px;
     width: 50px;
   }
-  #title-third :after {
-    margin: 0 0 2px 9px;
+
+  #title-third:after {
+    margin: 0 0 0px 9px;
     height: 3px;
     width: 50px;
   }
@@ -316,54 +325,66 @@ footer #right:hover {
   footer {
     margin-top: 0;
   }
+  footer #left {
+    margin: auto;
+  }
   footer #left:hover {
     animation: inherit;
+  }
+  footer #right {
+    margin: auto;
   }
   footer #right:hover {
     animation: inherit;
   }
 }
 @media all and (min-width: 375px) and (max-width: 424px) {
-  #title-first :before {
-    width: 75px;
-  }
-  #title-first :after {
+  #title-first:before {
     width: 75px;
   }
 
-  #title-second :before {
-    width: 75px;
-  }
-  #title-second :after {
+  #title-first:after {
     width: 75px;
   }
 
-  #title-third :before {
+  #title-second:before {
     width: 75px;
   }
-  #title-third :after {
+
+  #title-second:after {
+    width: 75px;
+  }
+
+  #title-third:before {
+    width: 75px;
+  }
+
+  #title-third:after {
     width: 75px;
   }
 }
 @media all and (min-width: 425px) and (max-width: 767px) {
-  #title-first :before {
-    width: 100px;
-  }
-  #title-first :after {
+  #title-first:before {
     width: 100px;
   }
 
-  #title-second :before {
-    width: 100px;
-  }
-  #title-second :after {
+  #title-first:after {
     width: 100px;
   }
 
-  #title-third :before {
+  #title-second:before {
     width: 100px;
   }
-  #title-third :after {
+
+  #title-second:after {
+    width: 100px;
+  }
+
+  #title-third:before {
+    width: 100px;
+  }
+
+  #title-third:after {
     width: 100px;
   }
 }
@@ -404,27 +425,30 @@ footer #right:hover {
     -o-background-size: 0;
   }
 
-  #title-first :before {
-    width: 200px;
-  }
-  #title-first :after {
+  #title-first:before {
     width: 200px;
   }
 
-  #title-second :before {
+  #title-first:after {
+    width: 200px;
+  }
+
+  #title-second:before {
     width: 200px;
     margin: 0 36px 2px 0;
   }
-  #title-second :after {
+
+  #title-second:after {
     width: 200px;
     margin: 0 0px 2px 36px;
   }
 
-  #title-third :before {
+  #title-third:before {
     width: 200px;
     margin: 0 30px 2px 0;
   }
-  #title-third :after {
+
+  #title-third:after {
     width: 200px;
     margin: 0 0px 2px 30px;
   }
@@ -461,12 +485,14 @@ footer #right:hover {
   #title-first h2 {
     font-size: 25px;
   }
-  #title-first :before {
+
+  #title-first:before {
     margin: 0 75px 2px 0;
     height: 3px;
     width: 225px;
   }
-  #title-first :after {
+
+  #title-first:after {
     margin: 0 0 2px 75px;
     height: 3px;
     width: 225px;
@@ -475,12 +501,14 @@ footer #right:hover {
   #title-second h2 {
     font-size: 25px;
   }
-  #title-second :before {
+
+  #title-second:before {
     margin: 0 40px 2px 0;
     height: 3px;
     width: 225px;
   }
-  #title-second :after {
+
+  #title-second:after {
     margin: 0 0 2px 40px;
     height: 3px;
     width: 225px;
@@ -489,12 +517,14 @@ footer #right:hover {
   #title-third h2 {
     font-size: 25px;
   }
-  #title-third :before {
+
+  #title-third:before {
     margin: 0 35px 2px 0;
     height: 3px;
     width: 225px;
   }
-  #title-third :after {
+
+  #title-third:after {
     margin: 0 0 2px 35px;
     height: 3px;
     width: 225px;
@@ -527,30 +557,36 @@ footer #right:hover {
   #title-first h2 {
     font-size: 25px;
   }
-  #title-first :before {
+
+  #title-first:before {
     width: 300px;
   }
-  #title-first :after {
+
+  #title-first:after {
     width: 300px;
   }
 
   #title-second h2 {
     font-size: 25px;
   }
-  #title-second :before {
+
+  #title-second:before {
     width: 300px;
   }
-  #title-second :after {
+
+  #title-second:after {
     width: 300px;
   }
 
   #title-third h2 {
     font-size: 25px;
   }
-  #title-third :before {
+
+  #title-third:before {
     width: 300px;
   }
-  #title-third :after {
+
+  #title-third:after {
     width: 300px;
   }
 
@@ -596,11 +632,13 @@ footer #right:hover {
   #title-first h2 {
     font-size: 50px;
   }
-  #title-first :before {
+
+  #title-first:before {
     width: 500px;
     margin: 0 100px 2px 0px;
   }
-  #title-first :after {
+
+  #title-first:after {
     width: 500px;
     margin: 0 0 2px 100px;
   }
@@ -608,11 +646,13 @@ footer #right:hover {
   #title-second h2 {
     font-size: 50px;
   }
-  #title-second :before {
+
+  #title-second:before {
     width: 500px;
     margin: 0 45px 2px 0px;
   }
-  #title-second :after {
+
+  #title-second:after {
     width: 500px;
     margin: 0px 0px 2px 45px;
   }
@@ -620,11 +660,13 @@ footer #right:hover {
   #title-third h2 {
     font-size: 50px;
   }
-  #title-third :before {
+
+  #title-third:before {
     width: 500px;
     margin: 0px 20px 2px 0px;
   }
-  #title-third :after {
+
+  #title-third:after {
     width: 500px;
     margin: 0px 0px 2px 20px;
   }
