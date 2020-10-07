@@ -250,6 +250,7 @@ footer {
     
     main{
         width: 90%;
+        margin-bottom: 40%;
     }
 
     #menu-header{
@@ -393,6 +394,10 @@ footer {
 
 @media all and (min-width: 425px) and (max-width: 767px)
 {
+    main{
+        margin-bottom: 35%;
+    }
+
     #title-first:before{
         width: 90px;
     }
@@ -426,6 +431,7 @@ footer {
 
     main{
         width: 90%;
+        margin-bottom: 21%;
     }
 
     .menu_title{
@@ -511,6 +517,7 @@ footer {
 {
     main{
         width: 89%;
+        margin-bottom: 17%;
     }
 
     .menu_title{
@@ -583,7 +590,9 @@ footer {
 {
     main{
         width: 69%;
+        margin-bottom: 10%;
     }
+
     #menu-header{
         i{
             font-size: 70px;
@@ -664,6 +673,7 @@ footer {
 
     main{
         width: 70%;
+        margin-bottom: 10%;
     }
 
     #menu-header{
@@ -730,15 +740,15 @@ footer {
 
     footer{
         margin-top: 2%;
-        height: 75px;
+        height: 100px;
         #left{
             font-size: 35px;
-            margin: 18px 20px;
+            margin: 35px 20px;
         }
 
         #right{
             font-size: 35px;
-            margin: 18px 20px;
+            margin: 35px 20px;
         }
     }
 }

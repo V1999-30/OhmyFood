@@ -251,7 +251,7 @@ footer #right:hover {
 
   main {
     width: 90%;
-    margin-bottom: 15%;
+    margin-bottom: 36%;
   }
 
   #menu-header {
@@ -379,7 +379,7 @@ footer #right:hover {
 
   main {
     width: 90%;
-    margin-bottom: 15%;
+    margin-bottom: 35%;
   }
 
   #menu-header {
@@ -477,7 +477,7 @@ footer #right:hover {
 
   main {
     width: 90%;
-    margin-bottom: 15%;
+    margin-bottom: 30%;
   }
 
   #menu-header {
@@ -569,6 +569,7 @@ footer #right:hover {
 @media all and (min-width: 768px) and (max-width: 1023px) {
   main {
     width: 90%;
+    margin-bottom: 17%;
   }
 
   #menu-header h2 {
@@ -671,6 +672,7 @@ footer #right:hover {
 @media all and (min-width: 1024px) and (max-width: 1865px) {
   main {
     width: 70%;
+    margin-bottom: 12%;
   }
 
   .menu_title h2 {
@@ -742,6 +744,10 @@ footer #right:hover {
   }
 }
 @media all and (min-width: 1440px) and (max-width: 1865px) {
+  main {
+    margin-bottom: 10%;
+  }
+
   #menu-header i {
     font-size: 70px;
   }
@@ -819,6 +825,7 @@ footer #right:hover {
 @media all and (min-width: 2560px) {
   main {
     width: 50%;
+    margin-bottom: 8%;
   }
 
   #menu-header i {
@@ -888,15 +895,15 @@ footer #right:hover {
 
   footer {
     margin-top: 2%;
-    height: 75px;
+    height: 100px;
   }
   footer #left {
     font-size: 35px;
-    margin: 18px 20px;
+    margin: 30px 20px;
   }
   footer #right {
     font-size: 35px;
-    margin: 18px 20px;
+    margin: 30px 20px;
   }
 }
 
