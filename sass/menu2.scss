@@ -184,6 +184,10 @@ main{
 }
 
 footer {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
     @include footer;
 
     #left{

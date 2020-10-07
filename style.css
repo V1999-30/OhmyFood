@@ -271,10 +271,13 @@ header a {
   }
 }
 footer {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   height: 70px;
-  width: 100%;
   background-color: #579C87;
 }
 footer #left {
